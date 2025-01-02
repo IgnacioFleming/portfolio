@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+:root {
+  --cyan: #06b6d4;
+}
+body {
+  font-family: "Saira", sans-serif;
+  color: white;
+}
+h1 {
+  @apply text-3xl my-5;
+}
+p {
+  @apply text-base my-1;
+}
+
+.card {
+  @apply border-solid bg-white h-full max-w-96 h-96 rounded-lg;
+}
