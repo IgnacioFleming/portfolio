@@ -1,20 +1,25 @@
-function Card({ header, title }) {
+import Button from "../Button/Button";
+
+function Card({ imagePath, title, description, buttonLabel, repositoryPath }) {
   return (
     <div className="card">
-      <header>
-        <img src="" alt="" />
+      <header className="h-1/2">
+        <img src={imagePath} alt="Image" />
       </header>
-      <main>
+      <main className="h-2/5">
         <div>
-          <h1></h1>
+          <h1>{title}</h1>
         </div>
         <div>
-          <p></p>
+          <p>{description}</p>
         </div>
       </main>
 
       <footer>
-        <div></div>
+        <div>
+          <div>{repositoryPath}</div>
+          <Button label={buttonLabel} />
+        </div>
       </footer>
     </div>
   );
