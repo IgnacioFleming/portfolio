@@ -27,5 +27,5 @@ p {
 }
 
 .card {
-  @apply border-solid bg-white h-full max-w-96 h-96 rounded-lg;
+  @apply border-solid bg-white h-full max-w-96 h-96 rounded-lg text-black;
 }

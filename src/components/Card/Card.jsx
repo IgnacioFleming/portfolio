@@ -1,6 +1,6 @@
 import Button from "../Button/Button";
 
-function Card({ imagePath, title, description, buttonLabel, repositoryPath }) {
+function Card({ imagePath, title, description, footer }) {
   return (
     <div className="card">
       <header className="h-1/2">
@@ -16,10 +16,7 @@ function Card({ imagePath, title, description, buttonLabel, repositoryPath }) {
       </main>
 
       <footer>
-        <div>
-          <div>{repositoryPath}</div>
-          <Button label={buttonLabel} />
-        </div>
+        <div>{footer}</div>
       </footer>
     </div>
   );
