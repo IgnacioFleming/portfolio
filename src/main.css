@@ -20,12 +20,23 @@ body {
   color: white;
 }
 h1 {
-  @apply text-3xl my-5;
+  @apply text-5xl my-5;
+}
+h2 {
+  @apply text-4xl;
+}
+h3 {
+  @apply text-3xl;
+}
+h6 {
+  @apply text-sm;
 }
 p {
   @apply text-base my-1;
 }
 
 .card {
-  @apply border-solid bg-white h-full max-w-96 h-96 rounded-lg text-black;
+  @apply border-solid bg-white rounded-lg text-black flex flex-col justify-between overflow-hidden;
+  height: 700px;
+  width: 400px;
 }
