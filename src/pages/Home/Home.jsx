@@ -14,7 +14,7 @@ function Home() {
           <h1>Full Stack Development</h1>
           <p>Hi there! I'm passionate about creating innovative solutions through web development. With years of experience as a Product Owner, I bring a unique perspective to software creation, blending technical skills with business insights. Whether it's building seamless user experiences or tackling back-end challenges, I thrive on delivering value through code.</p>
           <div className="my-5 flex gap-10 items-center">
-            <Button label="Download Resume" icon={<MdOutlineFileDownload size={24} />} iconPosition="right" />
+            <Button label="Download Resume" icon={<MdOutlineFileDownload size={24} />} iconPosition="right" className="shadow-elevated" />
             <FaGithub size={35} color="var(--cyan)" className="cursor-pointer" />
             <FaLinkedin size={35} color="var(--cyan)" className="cursor-pointer" />
           </div>
