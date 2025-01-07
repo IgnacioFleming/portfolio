@@ -11,9 +11,9 @@ const ContactoContainer = ({ fontStyles }) => {
     initialValues: { nombre: "", email: "", consulta: "" },
     onSubmit: sendQuery,
     validationSchema: Yup.object().shape({
-      nombre: Yup.string().required("Debe colocar su nombre y apellido").max(50, "El nombre y apellido debe tener entre 1 y 50 caracteres"),
-      email: Yup.string().required("Debe colocar su email").email("Este campo debe ser un email"),
-      consulta: Yup.string().required("Por favor, ingrese su consulta"),
+      nombre: Yup.string().required("Please write your name here.").max(50, "Name must be 50 characters max."),
+      email: Yup.string().required("Please write your email here.").email("This field must contain an email address."),
+      consulta: Yup.string().required("Please write your contact message here."),
     }),
     validateOnChange: false,
   });

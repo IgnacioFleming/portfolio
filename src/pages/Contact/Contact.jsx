@@ -1,50 +1,8 @@
-import { createTheme, TextField, ThemeProvider } from "@mui/material";
+import { TextField, ThemeProvider } from "@mui/material";
 import Button from "../../components/Button/Button";
+import { theme } from "./theme";
 
 const Contacto = ({ handleChange, handleSubmit, errors, values }) => {
-  const theme = createTheme({
-    palette: {
-      primary: {
-        main: "#f5f5f4", // Color principal (usado para el borde y el label)
-      },
-    },
-    components: {
-      MuiTextField: {
-        styleOverrides: {
-          root: {
-            "& .MuiOutlinedInput-root": {
-              "& fieldset": {
-                borderColor: "#f5f5f4", // Color del borde
-              },
-              "&:hover fieldset": {
-                borderColor: "#d4d4d4", // Color al pasar el mouse
-              },
-              "&.Mui-focused fieldset": {
-                borderColor: "#bfbfbf", // Color cuando está enfocado
-              },
-            },
-          },
-        },
-      },
-      MuiInputLabel: {
-        styleOverrides: {
-          root: {
-            color: "#f5f5f4", // Color del label cuando no está enfocado
-          },
-          focused: {
-            color: "#bfbfbf", // Color del label cuando está enfocado
-          },
-        },
-      },
-      MuiInputBase: {
-        styleOverrides: {
-          input: {
-            color: "#f5f5f4", // Color del texto dentro del input
-          },
-        },
-      },
-    },
-  });
   return (
     <section className="flex justify-center">
       <div className="w-3/4">

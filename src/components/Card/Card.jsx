@@ -14,7 +14,7 @@ function Card({ imagePath, title, description, footer }) {
           </div>
         </main>
 
-        <footer className="h-1/5">
+        <footer className="h-1/5 flex flex-col justify-end py-4">
           <div>{footer}</div>
         </footer>
       </div>

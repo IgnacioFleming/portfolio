@@ -7,17 +7,19 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 function Projects() {
   const renderFooter = (project) => {
     return (
-      <footer className="flex flex-col gap-2">
-        <div className="flex gap-1 ">
-          {project.stack.map((tech, index) => {
-            return (
-              <div className="p-1" key={index}>
-                <img src={icons[tech]} alt={tech} title={tech} className="w-10 h-10" />
-              </div>
-            );
-          })}
+      <footer className="flex flex-col gap-2 justify-end">
+        <div className="flex justify-between">
+          <div className="flex gap-1">
+            {project.stack.map((tech, index) => {
+              return (
+                <div className="p-1" key={index}>
+                  <img src={icons[tech]} alt={tech} title={tech} className="w-8 h-8" />
+                </div>
+              );
+            })}
+          </div>
+          <Button label="Website" className="text-white h-10 w-24 shadow-overWhite" icon={<FaExternalLinkAlt />} iconPosition="right" />
         </div>
-        <Button label="Website" className="text-white h-10 w-24 shadow-overWhite" icon={<FaExternalLinkAlt />} iconPosition="right" />
       </footer>
     );
   };
