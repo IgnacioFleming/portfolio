@@ -1,4 +1,3 @@
-import Layout from "./layout/Layout";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import ContactoContainer from "./pages/Contact/ContactContainer";
 import Home from "./pages/Home/Home";
@@ -8,13 +7,13 @@ import Skills from "./pages/Skills/Skills";
 function App() {
   return (
     <>
-      <Layout>
+      <main>
         <Home />
         <Projects />
         <Skills />
         <AboutMe />
         <ContactoContainer />
-      </Layout>
+      </main>
     </>
   );
 }

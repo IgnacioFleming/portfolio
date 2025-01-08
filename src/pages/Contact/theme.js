@@ -28,10 +28,14 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           color: "#f5f5f4",
+
+          "&.Mui-focused": {
+            color: "#bfbfbf",
+          },
         },
-        focused: {
-          color: "#bfbfbf",
-        },
+        // focused: {
+        //   color: "#bfbfbf",
+        // },
       },
     },
     MuiInputBase: {

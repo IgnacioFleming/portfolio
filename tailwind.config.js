@@ -3,6 +3,10 @@ export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      colors: {
+        primary: "#80f0ff",
+        secondary: "black",
+      },
       animation: {
         ripple: "ripple 0.4s linear",
       },
