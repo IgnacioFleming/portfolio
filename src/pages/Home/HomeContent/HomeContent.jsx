@@ -10,14 +10,14 @@ function HomeContent() {
       <div className="w-1/2 flex justify-center">
         <div>
           <div className="my-8">
-            <h1 className="font-bold my-2">IGNACIO FLEMING</h1>
-            <h2 className="font-bold">Full Stack Dev</h2>
+            <h1 className="my-2">IGNACIO FLEMING</h1>
+            <h2>Full Stack Dev</h2>
           </div>
           <p className={styles.summary}>Hi there! I'm passionate about creating innovative solutions through web development. With years of experience as a Product Owner, I bring a unique perspective to software creation, blending technical skills with business insights. Whether it's building seamless user experiences or tackling back-end challenges, I thrive on delivering value through code.</p>
           <div className="flex gap-10 items-center">
-            <Button label="Download Resume" icon={<MdOutlineFileDownload size={24} />} iconPosition="right" className="shadow-elevated" />
-            <FaGithub size={35} color="var(--cyan)" className="cursor-pointer" onMouseEnter={eventChangeColor({ color: "white" })} onMouseLeave={eventChangeColor({ revert: true })} />
-            <FaLinkedin size={35} color="var(--cyan)" className="cursor-pointer" onMouseEnter={eventChangeColor({ color: "white" })} onMouseLeave={eventChangeColor({ revert: true })} />
+            <Button label="DOWNLOAD RESUME" icon={<MdOutlineFileDownload size={24} />} iconPosition="right" className="shadow-elevated text-black font-bold text-base" />
+            <FaGithub size={40} color="var(--cyan)" className="cursor-pointer" onMouseEnter={eventChangeColor({ color: "white" })} onMouseLeave={eventChangeColor({ revert: true })} />
+            <FaLinkedin size={40} color="var(--cyan)" className="cursor-pointer" onMouseEnter={eventChangeColor({ color: "white" })} onMouseLeave={eventChangeColor({ revert: true })} />
           </div>
         </div>
       </div>

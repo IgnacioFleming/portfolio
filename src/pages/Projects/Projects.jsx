@@ -1,34 +1,39 @@
-import Button from "../../components/Button/Button";
+import { useEffect, useRef, useState } from "react";
 import Card from "../../components/Card/Card";
-import { icons } from "../../helpers/icons";
 import { projects } from "./projectsInfo";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { renderFooter } from "./renderFooter";
 
 function Projects() {
-  const renderFooter = (project) => {
-    return (
-      <footer className="flex flex-col gap-2 justify-end">
-        <div className="flex justify-between">
-          <div className="flex gap-1">
-            {project.stack.map((tech, index) => {
-              return (
-                <div className="p-1" key={index}>
-                  <img src={icons[tech]} alt={tech} title={tech} className="w-8 h-8" />
-                </div>
-              );
-            })}
-          </div>
-          <Button label="Website" className="text-white h-10 w-24 shadow-overWhite" icon={<FaExternalLinkAlt />} iconPosition="right" />
-        </div>
-      </footer>
-    );
+  const containerRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const isWideViewport = window.innerWidth >= 1600;
+
+  const handleMouseDown = (e) => {
+    if (isWideViewport) return;
+    const container = containerRef.current;
+    setIsDragging(true);
+    container.startX = e.pageX - container.offsetLeft;
+    container.scrollLeftStart = container.scrollLeft;
+    console.log(container.className);
+  };
+
+  const handleMouseMove = (e) => {
+    if (isWideViewport) return;
+    const container = containerRef.current;
+    if (!isDragging) return;
+    const x = e.pageX - container.offsetLeft;
+    const scroll = x - container.startX;
+    container.scrollLeft = container.scrollLeftStart - scroll;
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
   };
   return (
-    <section className="flex justify-center">
-      <div className="w-3/4">
-        <h2 className="text-center">Projects</h2>
-
-        <div className="grid grid-cols-[repeat(auto-fit,_minmax(340px,_1fr))] gap-5 place-content-center">
+    <section className="flex justify-center bg-dark px-24">
+      <div className="w-11/12">
+        <h1 className="text-center my-24">PROYECTS</h1>
+        <div className={`flex gap-5 ${isWideViewport && "justify-center"} my-24 cursor-grab overflow-x-auto select-none  ${isDragging ? "cursor-grabbing" : "cursor-grab"}`} ref={containerRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp}>
           {projects.map((project, index) => {
             return (
               <article key={index} className="flex justify-center">

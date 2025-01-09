@@ -20,13 +20,13 @@ body {
   @apply text-primary;
 }
 h1 {
-  @apply text-5xl;
+  @apply text-6xl font-bold;
 }
 h2 {
-  @apply text-4xl;
+  @apply text-5xl font-bold;
 }
 h3 {
-  @apply text-3xl;
+  @apply text-2xl font-semibold;
 }
 h6 {
   @apply text-sm;
@@ -36,9 +36,9 @@ p {
 }
 
 .card {
-  @apply border-solid bg-white rounded-lg text-black flex flex-col justify-between overflow-hidden shadow-elevated;
-  height: 700px;
-  width: 400px;
+  @apply border-solid bg-primary rounded-lg text-black flex flex-col justify-between overflow-hidden shadow-elevated;
+  height: 500px;
+  width: 300px;
 }
 
 .navbar li {
