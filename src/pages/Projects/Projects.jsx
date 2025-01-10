@@ -30,10 +30,10 @@ function Projects() {
     setIsDragging(false);
   };
   return (
-    <section className="flex justify-center bg-dark px-24">
+    <section id="projects" className="flex justify-center bg-dark px-24">
       <div className="w-11/12">
-        <h1 className="text-center my-24">PROYECTS</h1>
-        <div className={`flex gap-5 ${isWideViewport && "justify-center"} my-24 cursor-grab overflow-x-auto select-none  ${isDragging ? "cursor-grabbing" : "cursor-grab"}`} ref={containerRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp}>
+        <h1 className="text-center my-24">PROJECTS</h1>
+        <div className={`flex gap-5 my-24 cursor-grab overflow-x-auto select-none  ${isDragging ? "cursor-grabbing" : "cursor-grab"}  ${isWideViewport && "justify-center cursor-auto"}`} ref={containerRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp}>
           {projects.map((project, index) => {
             return (
               <article key={index} className="flex justify-center">

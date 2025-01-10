@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className={styles.container}>
       <HomeBackground />
-      <div className={styles.innerLayout}>
+      <div id="home" className={styles.innerLayout}>
         <header>
           <Navbar />
         </header>

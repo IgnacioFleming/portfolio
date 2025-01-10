@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material";
 export const theme = createTheme({
   palette: {
     primary: {
-      main: "#f5f5f4",
+      main: "#80f0ff",
     },
   },
   components: {
@@ -12,40 +12,32 @@ export const theme = createTheme({
         root: {
           "& .MuiOutlinedInput-root": {
             "& fieldset": {
-              borderColor: "#f5f5f4",
+              borderColor: "#80f0ff",
+              borderWidth: 3,
             },
             "&:hover fieldset": {
-              borderColor: "#d4d4d4",
+              borderColor: "#fff",
             },
             "&.Mui-focused fieldset": {
-              borderColor: "#bfbfbf",
+              borderColor: "#fff",
+              borderWidth: 3,
             },
           },
         },
-      },
-    },
-    MuiInputLabel: {
-      styleOverrides: {
-        root: {
-          color: "#f5f5f4",
-
-          "&.Mui-focused": {
-            color: "#bfbfbf",
-          },
-        },
-        // focused: {
-        //   color: "#bfbfbf",
-        // },
       },
     },
     MuiInputBase: {
       styleOverrides: {
         input: {
-          color: "#f5f5f4",
+          color: "#80f0ff",
+          fontWeight: 600,
           "&:-webkit-autofill": {
-            WebkitBoxShadow: "0 0 0px 1000px #1e3a8a inset",
-            WebkitTextFillColor: "#f5f5f4",
+            WebkitBoxShadow: "0 0 0px 1000px inset",
+            WebkitTextFillColor: "var(--primary)",
             transition: "background-color 5000s ease-in-out 0s",
+          },
+          "&:hover": {
+            color: "#fff",
           },
         },
       },

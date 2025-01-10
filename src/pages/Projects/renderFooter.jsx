@@ -15,7 +15,9 @@ export const renderFooter = (project) => {
             );
           })}
         </div>
-        <Button label="WEBSITE" className="text-primary hover:text-black font-semibold border-none bg-dark h-10 w-auto shadow-overWhite" icon={<FaExternalLinkAlt />} iconPosition="right" />
+        <a href={project.deploy} target="_blank">
+          <Button label="WEBSITE" className="text-primary hover:text-black font-semibold border-none h-10 w-auto shadow-overWhite bg-dark" icon={<FaExternalLinkAlt />} iconPosition="right" />
+        </a>
       </div>
     </footer>
   );

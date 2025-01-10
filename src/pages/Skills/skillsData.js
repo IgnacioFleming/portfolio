@@ -1,8 +1,8 @@
 import { icons } from "../../helpers/icons";
 
 export const frontendSkills = [
-  { name: "Html5", path: icons.html },
-  { name: "Css3", path: icons.css },
+  { name: "HTML", path: icons.html },
+  { name: "CSS", path: icons.css },
   { name: "Javascript", path: icons.javascript },
   { name: "React Js", path: icons.reactJS },
   { name: "Vite", path: icons.vite },
@@ -13,10 +13,10 @@ export const frontendSkills = [
 
 export const backendAndDBSkills = [
   { name: "Node JS", path: icons.nodeJS },
-  { name: "Express JS", path: icons.expressJS },
+  { name: "Express JS", path: icons.expressWhite },
   { name: "Jest", path: icons.jest },
   { name: "MongoDB", path: icons.mongoDB },
-  { name: "MySQL", path: icons.mySQL },
+  { name: "MySQL", path: icons.mysqlWhite },
   { name: "PostgreSQL", path: icons.postgreSQL },
 ];
 export const toolsSkills = [

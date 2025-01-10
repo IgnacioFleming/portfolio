@@ -17,4 +17,7 @@ export const icons = {
   jira: "/src/assets/icons/jira.svg",
   jest: "/src/assets/icons/jest.svg",
   tailwind: "/src/assets/icons/tailwind.svg",
+  expressWhite: "/src/assets/icons/express-white.svg",
+  mysqlWhite: "/src/assets/icons/mysql-white.svg",
+  quote: "/src/assets/icons/quote.svg",
 };

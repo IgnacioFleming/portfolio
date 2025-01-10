@@ -15,9 +15,15 @@ function HomeContent() {
           </div>
           <p className={styles.summary}>Hi there! I'm passionate about creating innovative solutions through web development. With years of experience as a Product Owner, I bring a unique perspective to software creation, blending technical skills with business insights. Whether it's building seamless user experiences or tackling back-end challenges, I thrive on delivering value through code.</p>
           <div className="flex gap-10 items-center">
-            <Button label="DOWNLOAD RESUME" icon={<MdOutlineFileDownload size={24} />} iconPosition="right" className="shadow-elevated text-black font-bold text-base" />
-            <FaGithub size={40} color="var(--cyan)" className="cursor-pointer" onMouseEnter={eventChangeColor({ color: "white" })} onMouseLeave={eventChangeColor({ revert: true })} />
-            <FaLinkedin size={40} color="var(--cyan)" className="cursor-pointer" onMouseEnter={eventChangeColor({ color: "white" })} onMouseLeave={eventChangeColor({ revert: true })} />
+            <a download href="/src/assets/docs/CV Ignacio Fleming - EN.pdf">
+              <Button label="DOWNLOAD RESUME" icon={<MdOutlineFileDownload size={24} />} iconPosition="right" className="shadow-elevated text-black font-bold text-base bg-primary" />
+            </a>
+            <a href="https://github.com/IgnacioFleming" target="_blank">
+              <FaGithub size={40} color="var(--primary)" className="cursor-pointer" onMouseEnter={eventChangeColor({ color: "white" })} onMouseLeave={eventChangeColor({ revert: true })} />
+            </a>
+            <a href="https://www.linkedin.com/in/ignacio-fleming-1b5a18114/" target="_blank">
+              <FaLinkedin size={40} color="var(--primary)" className="cursor-pointer" onMouseEnter={eventChangeColor({ color: "white" })} onMouseLeave={eventChangeColor({ revert: true })} />
+            </a>
           </div>
         </div>
       </div>
