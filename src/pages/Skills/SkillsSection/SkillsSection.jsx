@@ -6,7 +6,7 @@ function SkillsSection({ skills, title }) {
       <article className="flex flex-col items-center justify-center m-12">
         <div className="w-full flex items-center">
           <h2 className="my-2 w-2/6">{title.toUpperCase()}</h2>
-          <div className="flex gap-10 items-center h-40 2xl:mx-40">
+          <div className="flex gap-5 items-center h-40 2xl:mx-40">
             {skills.map((skill, index) => {
               return (
                 <div key={index}>
