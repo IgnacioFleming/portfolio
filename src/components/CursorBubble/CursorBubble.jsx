@@ -9,7 +9,7 @@ function CursorBubble() {
 
   return (
     <>
-      <div ref={smallBubbleRef} className={` border-solid rounded-full absolute -translate-y-1/2 -translate-x-1/2 z-20 pointer-events-none transition-all duration-200 ease-in-out border-white ${isHovered ? "w-28 h-28 border-4 border-white" : "w-4 h-4 border-2"}`}></div>
+      <div ref={smallBubbleRef} className={` border-solid rounded-full absolute -translate-y-1/2 -translate-x-1/2 z-20 pointer-events-none transition-all duration-200 ease-in-out border-white ${isHovered ? "w-28 h-28 border-4" : "w-4 h-4 border-2"}`}></div>
       <div ref={bigBubbleRef} className={` border-solid rounded-full absolute -translate-y-1/2 -translate-x-1/2 z-20 pointer-events-none transition-all duration-200 ease-in-out border-white ${isHovered ? "hidden" : "w-12 h-12 border-2"}`}></div>
     </>
   );
