@@ -6,8 +6,8 @@ import { eventChangeColor } from "../../../helpers/utils";
 
 function HomeContent() {
   return (
-    <div className="flex justify-center items-center w-full">
-      <div className="w-1/2 flex justify-center">
+    <div className="flex flex-col-reverse lg:flex-row justify-center items-center w-full py-16 lg:py-0">
+      <div className="w-full lg:w-1/2 flex justify-center">
         <div>
           <div className="my-8">
             <h1 className="my-2">IGNACIO FLEMING</h1>
@@ -27,7 +27,7 @@ function HomeContent() {
           </div>
         </div>
       </div>
-      <div className="w-1/2 flex justify-end">
+      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
         <img src="https://previews.123rf.com/images/yupiramos/yupiramos1705/yupiramos170514531/ 77987158-dise%C3%B1o-gr%C3%A1fico-del-ejemplo-del-vector-del-icono-del-perfil-del-hombre-joven.jpg" alt="Profile image" className="w-80 h-80 rounded-full" />
       </div>
     </div>
