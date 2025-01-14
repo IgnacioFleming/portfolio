@@ -34,9 +34,12 @@ export const theme = createTheme({
           "&:-webkit-autofill": {
             WebkitBoxShadow: "0 0 0px 1000px inset",
             WebkitTextFillColor: "var(--primary)",
-            transition: "background-color 5000s ease-in-out 0s",
+            transition: "background-color 100s ease-in-out 0s",
           },
           "&:hover": {
+            color: "#fff",
+          },
+          "&:focus": {
             color: "#fff",
           },
         },

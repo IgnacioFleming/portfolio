@@ -74,11 +74,11 @@ function Projects() {
   };
 
   return (
-    <section id="projects" className="flex justify-center bg-dark px-5 lg:px-24">
+    <section id="projects" className="flex justify-center bg-dark px-5 lg:px-24 py-8 md:py-24">
       <div className="w-full lg:w-11/12">
-        <h1 className="text-center my-24">PROJECTS</h1>
+        <h1 className="text-center">PROJECTS</h1>
         <div className="relative">
-          <div className={`relative flex flex-wrap justify-center lg:justify-start lg:flex-nowrap gap-5 my-24 overflow-x-auto select-none  ${showDragScroll()}  ${isWideViewport && "justify-center cursor-auto"}`} ref={containerRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} style={{ scrollbarWidth: "none" }}>
+          <div className={`relative flex flex-wrap justify-start justify-center sm:justify-start 2xl:justify-center xl:flex-nowrap gap-5 my-12 lg:overflow-x-auto select-none  ${showDragScroll()}  ${isWideViewport && "justify-center cursor-auto"}`} ref={containerRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} style={{ scrollbarWidth: "none" }}>
             {projects.map((project, index) => {
               return (
                 <article key={index} className="flex justify-center">

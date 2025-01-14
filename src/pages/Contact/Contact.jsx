@@ -7,16 +7,16 @@ import { eventChangeColor } from "../../helpers/utils";
 
 const Contact = ({ handleChange, handleSubmit, errors, values }) => {
   return (
-    <section id="contact" className="flex justify-center py-24 bg-[url('/src/assets/images/background-code.png')] bg-dark">
+    <section id="contact" className="flex justify-center py-8 md:py-24 bg-[url('/src/assets/images/background-code.png')] bg-dark">
       <div className="w-11/12">
         <h1>
           LET'S <br />
           CONNECT!
         </h1>
         <form onSubmit={handleSubmit} className="my-12">
-          <div className="flex flex-col w-1/2 gap-5">
+          <div className="flex flex-col w-full md:w-1/2 gap-5">
             <ThemeProvider theme={theme}>
-              <TextField className="w-1/2" color="primary" name="nombre" placeholder="NAME" value={values.nombre} onChange={handleChange} error={errors.nombre ? true : false} helperText={errors.nombre} />
+              <TextField className="w-full md:w-1/2" color="primary" name="nombre" placeholder="NAME" value={values.nombre} onChange={handleChange} error={errors.nombre ? true : false} helperText={errors.nombre} />
               <TextField name="email" placeholder="EMAIL" value={values.email} onChange={handleChange} error={errors.email ? true : false} helperText={errors.email} />
               <TextField multiline rows={8} name="consulta" placeholder="MESSAGE" value={values.consulta} onChange={handleChange} error={errors.consulta ? true : false} helperText={errors.consulta} />
             </ThemeProvider>

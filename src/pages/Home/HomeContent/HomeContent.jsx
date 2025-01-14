@@ -6,7 +6,7 @@ import { eventChangeColor } from "../../../helpers/utils";
 
 function HomeContent() {
   return (
-    <div className="flex flex-col-reverse lg:flex-row justify-center items-center w-full py-16 lg:py-0">
+    <div className="flex flex-col-reverse lg:flex-row justify-center items-center w-full py-5 md:py-16 lg:py-0">
       <div className="w-full lg:w-1/2 flex justify-center">
         <div>
           <div className="my-8">
@@ -14,7 +14,7 @@ function HomeContent() {
             <h2>Full Stack Dev</h2>
           </div>
           <p className={styles.summary}>Hi there! I'm passionate about creating innovative solutions through web development. With years of experience as a Product Owner, I bring a unique perspective to software creation, blending technical skills with business insights. Whether it's building seamless user experiences or tackling back-end challenges, I thrive on delivering value through code.</p>
-          <div className="flex gap-10 items-center">
+          <div className="flex gap-5 lg:gap-10 items-center">
             <a download href="/src/assets/docs/CV Ignacio Fleming - EN.pdf">
               <Button label="DOWNLOAD RESUME" icon={<MdOutlineFileDownload size={24} />} iconPosition="right" className="shadow-elevated text-black font-bold text-base bg-primary" />
             </a>
