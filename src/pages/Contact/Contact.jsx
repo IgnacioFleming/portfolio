@@ -14,7 +14,7 @@ const Contact = ({ handleChange, handleSubmit, errors, values }) => {
           CONNECT!
         </h1>
         <form onSubmit={handleSubmit} className="my-12">
-          <div className="flex flex-col w-full md:w-1/2 gap-5">
+          <div className="flex flex-col w-full lg:w-1/2 gap-5">
             <ThemeProvider theme={theme}>
               <TextField className="w-full md:w-1/2" color="primary" name="nombre" placeholder="NAME" value={values.nombre} onChange={handleChange} error={errors.nombre ? true : false} helperText={errors.nombre} />
               <TextField name="email" placeholder="EMAIL" value={values.email} onChange={handleChange} error={errors.email ? true : false} helperText={errors.email} />

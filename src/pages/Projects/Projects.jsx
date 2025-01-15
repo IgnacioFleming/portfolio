@@ -1,84 +1,24 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import Card from "../../components/Card/Card";
 import { projects } from "./projectsInfo";
 import { renderFooter } from "./renderFooter";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useJustifyOverflownContent } from "../../hooks/useJustifyOverflownContent";
+import { useHandleDragging } from "../../hooks/useHandleDragging";
 
 function Projects() {
   const containerRef = useRef(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const [showLeftArrow, setShowLeftArrow] = useState(false);
-  const [showRightArrow, setShowRightArrow] = useState(true);
   const isWideViewport = window.innerWidth >= 1600;
-  const isNarrowViewport = window.innerWidth < 1024;
-
-  const handleMouseDown = (e) => {
-    if (isWideViewport) return;
-    const container = containerRef.current;
-    setIsDragging(true);
-    container.startX = e.pageX - container.offsetLeft;
-    container.scrollLeftStart = container.scrollLeft;
-  };
-
-  const handleMouseMove = (e) => {
-    if (isWideViewport) return;
-    const container = containerRef.current;
-    if (!isDragging) return;
-    const x = e.pageX - container.offsetLeft;
-    const scroll = x - container.startX;
-    container.scrollLeft = container.scrollLeftStart - scroll;
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
-  const handleScrollX = () => {
-    if (isWideViewport) return;
-    const container = containerRef.current;
-    if (container) {
-      const { scrollLeft, scrollWidth, offsetWidth } = container;
-      const atStart = scrollLeft === 0;
-      const atEnd = scrollLeft + offsetWidth >= scrollWidth - 5;
-      setShowLeftArrow(!atStart);
-      setShowRightArrow(!atEnd);
-    }
-  };
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener("scroll", handleScrollX);
-    }
-    return () => {
-      if (container) {
-        container.removeEventListener("scroll", handleScrollX);
-      }
-    };
-  }, []);
-
-  const handleArrowClick = (direction = "right") => {
-    const container = containerRef.current;
-    const { scrollLeft, scrollWidth } = container;
-    const scrollAmount = scrollWidth - scrollLeft;
-    container.scrollBy({
-      left: direction === "left" ? -scrollAmount : scrollAmount,
-      behavior: "smooth",
-    });
-  };
-
-  const showDragScroll = () => {
-    if (isWideViewport) return;
-    if (isDragging) return "cursor-grabbing";
-    return "cursor-grab";
-  };
+  const isNarrowViewport = window.innerWidth < 640;
+  const justifyContent = useJustifyOverflownContent("justify-center", containerRef);
+  const { showLeftArrow, showRightArrow, handleArrowClick, handleMouseDown, handleMouseUp, handleMouseMove, showDragScroll } = useHandleDragging(containerRef, isWideViewport);
 
   return (
     <section id="projects" className="flex justify-center bg-dark px-5 lg:px-24 py-8 md:py-24">
       <div className="w-full lg:w-11/12">
         <h1 className="text-center">PROJECTS</h1>
         <div className="relative">
-          <div className={`relative flex flex-wrap justify-start justify-center sm:justify-start 2xl:justify-center xl:flex-nowrap gap-5 my-12 lg:overflow-x-auto select-none  ${showDragScroll()}  ${isWideViewport && "justify-center cursor-auto"}`} ref={containerRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} style={{ scrollbarWidth: "none" }}>
+          <div className={`relative flex ${justifyContent} flex-wrap sm:flex-nowrap gap-5 my-12 overflow-x-auto select-none  ${showDragScroll()}  ${isWideViewport && "justify-center cursor-auto"}`} ref={containerRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} style={{ scrollbarWidth: "none" }}>
             {projects.map((project, index) => {
               return (
                 <article key={index} className="flex justify-center">

@@ -3,7 +3,12 @@ import Navbar from "./Navbar";
 
 function FixedNavbar() {
   const isNarrowViewport = window.innerWidth < 1024;
-  return <header className="w-full fixed bg-dark z-10 opacity-90">{isNarrowViewport ? <BurgerNavbar /> : <Navbar className="w-11/12" />}</header>;
+  return (
+    <header className="w-full fixed bg-dark z-10 opacity-90">
+      <BurgerNavbar />
+      <Navbar className="w-11/12" />
+    </header>
+  );
 }
 
 export default FixedNavbar;

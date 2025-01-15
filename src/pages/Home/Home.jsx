@@ -10,10 +10,8 @@ function Home() {
     <div className={styles.container}>
       <HomeBackground />
       <div id="home" className={styles.innerLayout}>
-        <header className="hidden md:block">
-          <Navbar />
-        </header>
-        {isNarrowViewport && <BurgerNavbar />}
+        <Navbar />
+        <BurgerNavbar />
         <section className={`flex justify-center items-center h-5/6`}>
           <HomeContent />
         </section>
