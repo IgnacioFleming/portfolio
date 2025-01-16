@@ -2,7 +2,6 @@ import BurgerNavbar from "./BurgerNavbar";
 import Navbar from "./Navbar";
 
 function FixedNavbar() {
-  const isNarrowViewport = window.innerWidth < 1024;
   return (
     <header className="w-full fixed bg-dark z-10 opacity-90">
       <BurgerNavbar />

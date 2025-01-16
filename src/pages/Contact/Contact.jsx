@@ -7,7 +7,7 @@ import { eventChangeColor } from "../../helpers/utils";
 
 const Contact = ({ handleChange, handleSubmit, errors, values }) => {
   return (
-    <section id="contact" className="flex justify-center py-8 md:py-24 bg-[url('/src/assets/images/background-code.png')] bg-dark">
+    <section id="contact" className="flex justify-center py-24 bg-[url('/src/assets/images/background-code.png')] bg-dark">
       <div className="w-11/12">
         <h1>
           LET'S <br />

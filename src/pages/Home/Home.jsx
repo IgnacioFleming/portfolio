@@ -5,7 +5,6 @@ import HomeContent from "./HomeContent/HomeContent";
 import BurgerNavbar from "../../layout/Navbar/BurgerNavbar";
 
 function Home() {
-  const isNarrowViewport = window.innerWidth < 1024;
   return (
     <div className={styles.container}>
       <HomeBackground />

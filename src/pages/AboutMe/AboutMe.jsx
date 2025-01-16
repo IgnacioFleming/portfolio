@@ -2,7 +2,7 @@ import { textAboutMe } from "./textAboutMe";
 
 function AboutMe() {
   return (
-    <section id="aboutMe" className="flex justify-center bg-primary py-8 md:py-24">
+    <section id="aboutMe" className="flex justify-center bg-primary py-24">
       <div className="w-11/12 flex flex-col lg:flex-row">
         <div className="w-full lg:w-9/12 flex flex-col items-center">
           <h1 className="text-secondary w-full">ABOUT ME</h1>

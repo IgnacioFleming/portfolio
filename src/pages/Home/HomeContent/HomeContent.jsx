@@ -6,7 +6,7 @@ import { eventChangeColor } from "../../../helpers/utils";
 
 function HomeContent() {
   return (
-    <div className="flex flex-col-reverse lg:flex-row justify-center items-center w-full py-5 md:py-16 lg:py-0">
+    <div className="flex flex-col-reverse lg:flex-row justify-center items-center w-full py-16 lg:py-0">
       <div className="w-full lg:w-1/2 flex justify-center">
         <div>
           <div className="my-8">
