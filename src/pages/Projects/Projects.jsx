@@ -14,7 +14,7 @@ function Projects() {
   const { showLeftArrow, showRightArrow, handleArrowClick, handleMouseDown, handleMouseUp, handleMouseMove, showDragScroll } = useHandleDragging(containerRef, isWideViewport);
 
   return (
-    <section id="projects" className="flex justify-center bg-dark py-24 lg:px-24 py-8 md:py-24">
+    <section id="projects" className="flex justify-center bg-dark py-24 sm:px-24 py-8 md:py-24">
       <div className="w-full lg:w-11/12">
         <h1 className="text-center">PROJECTS</h1>
         <div className="relative">
