@@ -27,8 +27,8 @@ function HomeContent() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
-        <img src="https://previews.123rf.com/images/yupiramos/yupiramos1705/yupiramos170514531/ 77987158-dise%C3%B1o-gr%C3%A1fico-del-ejemplo-del-vector-del-icono-del-perfil-del-hombre-joven.jpg" alt="Profile image" className="w-80 h-80 rounded-full" />
+      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end p-12">
+        <img src="/src/assets/images/profile.webp" alt="Profile image" className="w-80 h-80 rounded-full" />
       </div>
     </div>
   );
