@@ -3,7 +3,6 @@ import * as Yup from "yup";
 import { addDoc, collection } from "firebase/firestore";
 import Swal from "sweetalert2";
 import { db } from "../../../firebase.config";
-import { emailTemplate } from "../../assets/templates/emailTemplate";
 import Contact from "./Contact";
 
 const ContactoContainer = ({ fontStyles }) => {

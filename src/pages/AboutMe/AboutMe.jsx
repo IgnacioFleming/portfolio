@@ -11,7 +11,7 @@ function AboutMe() {
           </div>
         </div>
         <div className="w-full lg:w-3/12 flex items-center lg:items-end justify-center">
-          <img className="w-96 " src="/src/assets/images/developing.webp" alt="Picture of myself programming" />
+          <img className="w-96 " src="/public/images/developing.webp" alt="Picture of myself programming" />
         </div>
       </div>
     </section>

@@ -15,7 +15,7 @@ function HomeContent() {
           </div>
           <p className={styles.summary}>Hi there! I'm passionate about creating innovative solutions through web development. With years of experience as a Product Owner, I bring a unique perspective to software creation, blending technical skills with business insights. Whether it's building seamless user experiences or tackling back-end challenges, I thrive on delivering value through code.</p>
           <div className="flex gap-5 lg:gap-10 items-center">
-            <a download href="/src/assets/docs/CV Ignacio Fleming - EN.pdf">
+            <a download href="/public/docs/CV Ignacio Fleming - EN.pdf">
               <Button label="DOWNLOAD RESUME" icon={<MdOutlineFileDownload size={24} />} iconPosition="right" className="shadow-elevated text-black font-bold text-base bg-primary" />
             </a>
             <a href="https://github.com/IgnacioFleming" target="_blank">
@@ -28,7 +28,7 @@ function HomeContent() {
         </div>
       </div>
       <div className="w-full lg:w-1/2 flex justify-center lg:justify-end p-12">
-        <img src="/src/assets/images/profile.webp" alt="Profile image" className="w-80 h-80 rounded-full" />
+        <img src="/public/images/profile.webp" alt="Profile image" className="w-80 h-80 rounded-full" />
       </div>
     </div>
   );
