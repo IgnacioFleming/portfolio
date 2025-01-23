@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Business Manager",
     description: "Management system for products, clients, and sales, built with React on the frontend using PrimeReact for styled components, and a backend powered by Node.js, Express, and MySQL. It includes a RESTful API for CRUD operations and external service integration, focusing on modularity and scalability.",
-    imagePath: "/public/images/business-manager.png",
+    imagePath: "/images/business-manager.png",
     frontEndRepositoryPath: "https://github.com/IgnacioFleming/management-system-frontend",
     backEndRepositoryPath: "https://github.com/IgnacioFleming/backoffice-backend",
     deploy: "https://management-system-frontend-five.vercel.app",
@@ -11,7 +11,7 @@ export const projects = [
   {
     title: "The Office Store",
     description: "Full e-commerce built with React and Node.js. Users can browse products, add them to the cart, and make purchases. Integrated with Stripe for secure payment processing and includes a backend for managing products, orders, and users.",
-    imagePath: "/public/images/the-office-store.png",
+    imagePath: "/images/the-office-store.png",
     frontEndRepositoryPath: "https://github.com/IgnacioFleming/webapp_ecommerce_frontend",
     backEndRepositoryPath: "https://github.com/IgnacioFleming/app-ecommerce-backend",
     deploy: "",
@@ -20,7 +20,7 @@ export const projects = [
   {
     title: "Vizcacha Wines",
     description: "An institutional website for a local winery, built with React and styled using Material UI. The site features essential sections and a dynamic contact form integrated with Firebase Firestore to store inquiries. Additionally, a custom Node.js service sends email notifications to the company upon form submission.",
-    imagePath: "/public/images/vizcacha-wines.png",
+    imagePath: "/images/vizcacha-wines.png",
     frontEndRepositoryPath: "https://github.com/IgnacioFleming/vizcacha-wines",
     deploy: "",
     stack: ["reactJS", "materialUI", "firebase"],
@@ -28,7 +28,7 @@ export const projects = [
   {
     title: "Serminca",
     description: "A professional website for a mining company, built using React and styled with Material UI. It features an interactive contact form that stores inquiries in Firebase Firestore, along with two embedded Google Maps showing key locations. The email notifications for form submissions are handled by a custom Node.js service.",
-    imagePath: "/public/images/serminca.png",
+    imagePath: "/images/serminca.png",
     frontEndRepositoryPath: "https://github.com/IgnacioFleming/Serminca",
     deploy: "",
     stack: ["reactJS", "materialUI", "firebase"],
