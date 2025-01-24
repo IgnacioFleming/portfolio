@@ -4,7 +4,7 @@ export const icons = {
   mySQL: "/icons/mysql.svg",
   nodeJS: "/icons/nodeJS.svg",
   expressJS: "/icons/express.svg",
-  mongoDB: "/icons/mongodb.svg",
+  mongoDB: "/icons/mongoDB.svg",
   firebase: "/icons/firebase.svg",
   materialUI: "/icons/materialUI.svg",
   css: "/icons/css.svg",
