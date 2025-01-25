@@ -27,7 +27,7 @@ function HomeContent() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end p-12">
+      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end p-0 sm:p-12">
         <img src="/images/profile.webp" alt="Profile image" className="w-80 h-80 rounded-full" />
       </div>
     </div>
