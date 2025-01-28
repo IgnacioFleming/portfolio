@@ -14,7 +14,7 @@ export const projects = [
     imagePath: "/images/the-office-store.png",
     frontEndRepositoryPath: "https://github.com/IgnacioFleming/webapp_ecommerce_frontend",
     backEndRepositoryPath: "https://github.com/IgnacioFleming/app-ecommerce-backend",
-    deploy: "",
+    deploy: "https://webapp-ecommerce-frontend.vercel.app",
     stack: ["reactJS", "materialUI", "expressJS", "nodeJS", "mongoDB"],
   },
   {
