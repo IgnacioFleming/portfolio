@@ -22,7 +22,7 @@ export const projects = [
     description: "An institutional website for a local winery, built with React and styled using Material UI. The site features essential sections and a dynamic contact form integrated with Firebase Firestore to store inquiries. Additionally, a custom Node.js service sends email notifications to the company upon form submission.",
     imagePath: "/images/vizcacha-wines.png",
     frontEndRepositoryPath: "https://github.com/IgnacioFleming/vizcacha-wines",
-    deploy: "",
+    deploy: "https://vizcacha-wines.vercel.app",
     stack: ["reactJS", "materialUI", "firebase"],
   },
   {
