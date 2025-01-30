@@ -30,7 +30,7 @@ export const projects = [
     description: "A professional website for a mining company, built using React and styled with Material UI. It features an interactive contact form that stores inquiries in Firebase Firestore, along with two embedded Google Maps showing key locations. The email notifications for form submissions are handled by a custom Node.js service.",
     imagePath: "/images/serminca.png",
     frontEndRepositoryPath: "https://github.com/IgnacioFleming/Serminca",
-    deploy: "",
+    deploy: "https://serminca.vercel.app",
     stack: ["reactJS", "materialUI", "firebase"],
   },
 ];
