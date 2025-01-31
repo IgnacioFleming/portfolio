@@ -1,22 +1,25 @@
+import { useTranslation } from "react-i18next";
+
 function Navbar({ className }) {
+  const { t } = useTranslation();
   return (
     <nav className={`hidden sm:block h-24 flex items-center justify-end ${className}`}>
       <ul className="flex justify-end items-center gap-5 h-full text-lg font-semibold navbar">
         <a href="#home">
-          <li>HOME</li>
+          <li>{t("navbar.home")}</li>
         </a>
 
         <a href="#projects">
-          <li>PROJECTS</li>
+          <li>{t("navbar.projects")}</li>
         </a>
         <a href="#skills">
-          <li>SKILLS</li>
+          <li>{t("navbar.skills")}</li>
         </a>
         <a href="#aboutMe">
-          <li>ABOUT ME</li>
+          <li>{t("navbar.about-me")}</li>
         </a>
         <a href="#contact">
-          <li>CONTACT</li>
+          <li>{t("navbar.contact")}</li>
         </a>
       </ul>
     </nav>

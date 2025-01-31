@@ -1,0 +1,83 @@
+{
+  "navbar": {
+    "home": "HOME",
+    "projects": "PROJECTS",
+    "skills": "SKILLS",
+    "about-me": "ABOUT ME",
+    "contact": "CONTACT"
+  },
+  "content": {
+    "home": {
+      "name": "IGNACIO FLEMING",
+      "position": "Full Stack Dev",
+      "description": "Passionate about creating innovative solutions through web development. With years of experience as a Product Owner, I bring a unique perspective to software creation, blending technical skills with business insights. Whether it's building seamless user experiences or tackling back-end challenges, I thrive on delivering value through code.",
+      "download-button": "DOWNLOAD RESUME"
+    },
+    "projects": {
+      "title": "PROJECTS",
+      "cards": {
+        "business-manager": {
+          "title": "Business Manager",
+          "description": "Management system for products, clients, and sales, built with React on the frontend using PrimeReact for styled components, and a backend powered by Node.js, Express, and MySQL. It includes a RESTful API for CRUD operations and external service integration, focusing on modularity and scalability."
+        },
+
+        "the-office-store": {
+          "title": "The Office Store",
+          "description": "Full e-commerce built with React and Node.js. Users can browse products, add them to the cart, and make purchases. Integrated with Stripe for secure payment processing and includes a backend for managing products, orders, and users."
+        },
+        "vizcacha-wines": {
+          "title": "Vizcacha Wines",
+          "description": "An institutional website for a local winery, built with React and styled using Material UI. The site features essential sections and a dynamic contact form integrated with Firebase Firestore to store inquiries. Additionally, a custom Node.js service sends email notifications to the company upon form submission."
+        },
+        "serminca": {
+          "title": "Serminca",
+          "description": "A professional website for a mining company, built using React and styled with Material UI. It features an interactive contact form that stores inquiries in Firebase Firestore, along with two embedded Google Maps showing key locations. The email notifications for form submissions are handled by a custom Node.js service."
+        }
+      }
+    },
+    "skills": {
+      "title": "SKILLS",
+      "sections": {
+        "frontend": "FRONTEND",
+        "backend": "BACKEND",
+        "tools": "TOOLS"
+      }
+    },
+    "about-me": {
+      "title": "ABOUT ME",
+      "paragraphs": {
+        "p1": "My journey into the world of development began in 2022, during my time working in the back-office operations of a stock brokerage firm. While there, I learned to program in VBA and automated most of the processes we had by creating macros.",
+        "p2": "As my skills grew, I transitioned into the Product area, where I led key projects, including managing cash-in/cash-out flows, balances, and holdings in traditional markets. One of my proudest achievements was leading the development of a cryptocurrency app from its inception to market launch — a challenging but incredibly rewarding experience.",
+        "p3": "Alongside my professional journey, I pursued a Full Stack bootcamp, which sparked my interest in programming. After completing the bootcamp, I continued learning and honing my skills through various courses and constant practice, striving to perfect my knowledge and stay up to date with industry trends.",
+        "p4": "I'm eager to bring my skills and passion to a company where I can contribute, grow, and create impactful solutions as a developer."
+      }
+    },
+    "contact": {
+      "title": "LET'S <br/>CONNECT!",
+      "form": {
+        "placeholders": {
+          "name": "NAME",
+          "email": "EMAIL",
+          "message": "MESSAGE"
+        },
+        "errors": {
+          "name": {
+            "required": "Please write your name here.",
+            "max": "Name must be 50 characters max."
+          },
+          "email": {
+            "required": "Please write your email here.",
+            "email": "This field must contain an email address."
+          },
+          "message": {
+            "required": "Please write your contact message here."
+          }
+        },
+        "send-button": "SEND"
+      },
+      "media": {
+        "title": "MEDIA"
+      }
+    }
+  }
+}

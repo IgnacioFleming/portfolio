@@ -1,5 +1,6 @@
 import { Button, Divider, Drawer, Link, List, ListItem, ListItemButton, ListItemText, Toolbar } from "@mui/material";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const textStyle = {
@@ -13,12 +14,13 @@ const ItemStyle = {
 };
 
 const MobileDrawer = ({ open, collapseDrawer }) => {
+  const { t } = useTranslation();
   const sections = [
-    { title: "HOME", path: "home" },
-    { title: "PROJECTS", path: "projects" },
-    { title: "SKILLS", path: "skills" },
-    { title: "ABOUT ME", path: "aboutMe" },
-    { title: "CONTACT", path: "contact" },
+    { title: t("navbar.home"), path: "home" },
+    { title: t("navbar.projects"), path: "projects" },
+    { title: t("navbar.skills"), path: "skills" },
+    { title: t("navbar.about-me"), path: "aboutMe" },
+    { title: t("navbar.contact"), path: "contact" },
   ];
 
   return (

@@ -1,0 +1,83 @@
+{
+  "navbar": {
+    "home": "INICIO",
+    "projects": "PROYECTOS",
+    "skills": "HABILIDADES",
+    "about-me": "SOBRE MI",
+    "contact": "CONTACTO"
+  },
+  "content": {
+    "home": {
+      "name": "IGNACIO FLEMING",
+      "position": "Desarrollador Full Stack",
+      "description": "Apasionado por crear soluciones innovadoras a través del desarrollo web. Con años de experiencia como Product Owner, aporto una perspectiva única a la creación de software, combinando habilidades técnicas con conocimientos empresariales. Ya sea que se trate de crear experiencias de usuario fluidas o abordar desafíos de back-end, me encanta brindar valor a través del código.",
+      "download-button": "DESCARGAR CV"
+    },
+    "projects": {
+      "title": "PROYECTOS",
+      "cards": {
+        "business-manager": {
+          "title": "Business Manager",
+          "description": "Sistema de gestión de productos, clientes y ventas, construido con React en el frontend utilizando PrimeReact para componentes estilados y un backend basado en Node.js, Express y MySQL. Incluye una API RESTful para operaciones CRUD e integración de servicios externos, centrándose en la modularidad y la escalabilidad."
+        },
+
+        "the-office-store": {
+          "title": "The Office Store",
+          "description": "Ecommerce completo creado con React y Node.js. Los usuarios pueden buscar productos, agregarlos al carrito y realizar compras. Integrado con Stripe para el procesamiento seguro de pagos e incluye un backend para administrar productos, pedidos y usuarios."
+        },
+        "vizcacha-wines": {
+          "title": "Vizcacha Wines",
+          "description": "Sitio web institucional para bodega local, creado con React y estilado con Material UI. El sitio cuenta con secciones esenciales y un formulario de contacto integrado con Firebase para almacenar consultas. Además, un servicio Node.js personalizado envía notificaciones por correo electrónico a la empresa cuando se envía el formulario."
+        },
+        "serminca": {
+          "title": "Serminca",
+          "description": "Sitio web profesional para empresa minera, creado con React y diseñado con Material UI. Incluye un formulario de contacto que almacena consultas en Firebase, junto con dos mapas de Google integrados que muestran ubicaciones clave. Las notificaciones por correo electrónico para los envíos de formularios se gestionan mediante un servicio Node.js personalizado."
+        }
+      }
+    },
+    "skills": {
+      "title": "HABILIDADES",
+      "sections": {
+        "frontend": "FRONTEND",
+        "backend": "BACKEND",
+        "tools": "HERRAMIENTAS"
+      }
+    },
+    "about-me": {
+      "title": "SOBRE MÍ",
+      "paragraphs": {
+        "p1": "Mi camino en el mundo del desarrollo comenzó en 2022, durante mi tiempo trabajando en operaciones administrativas de una firma de corretaje de bolsa. Allí aprendí a programar en VBA y automaticé la mayoría de los procesos que teníamos mediante la creación de macros.",
+        "p2": "A medida que mis habilidades fueron creciendo, pasé al área de Producto, donde dirigí proyectos clave, incluida la gestión de flujos de entrada y salida de dinero efectivo, saldos y tenencias en los mercados tradicionales. Uno de mis logros más importantes fue liderar el desarrollo de una aplicación de criptomonedas desde su inicio hasta su lanzamiento al mercado, una experiencia desafiante pero increíblemente gratificante.",
+        "p3": "Paralelamente a mi trayectoria profesional, realicé un bootcamp de Full Stack, lo que despertó mi interés por la programación. Después de completar el bootcamp, seguí aprendiendo y perfeccionando mis habilidades a través de varios cursos y práctica constante, esforzándome por perfeccionar mis conocimientos y mantenerme actualizado con las tendencias de la industria.",
+        "p4": "Estoy ansioso por aportar mis habilidades y pasión a una empresa donde pueda contribuir, crecer y crear soluciones impactantes como desarrollador."
+      }
+    },
+    "contact": {
+      "title": "CONECTEMOS!",
+      "form": {
+        "placeholders": {
+          "name": "NOMBRE",
+          "email": "EMAIL",
+          "message": "MENSAJE"
+        },
+        "errors": {
+          "name": {
+            "required": "Por favor completa tu nombre aquí.",
+            "max": "Este campo admite 50 caracteres como máximo."
+          },
+          "email": {
+            "required": "Por favor completa tu email aquí.",
+            "email": "Este campo debe ser completado con un email válido."
+          },
+          "message": {
+            "required": "Por favor escribe tu mensaje aquí."
+          }
+        },
+        "send-button": "ENVIAR"
+      },
+      "media": {
+        "title": "REDES"
+      }
+    }
+  }
+}

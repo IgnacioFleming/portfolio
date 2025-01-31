@@ -4,15 +4,17 @@ import { addDoc, collection } from "firebase/firestore";
 import Swal from "sweetalert2";
 import { db } from "../../../firebase.config";
 import Contact from "./Contact";
+import { useTranslation } from "react-i18next";
 
 const ContactoContainer = ({ fontStyles }) => {
+  const { t } = useTranslation();
   const { handleChange, handleSubmit, values, errors, resetForm } = useFormik({
     initialValues: { nombre: "", email: "", consulta: "" },
     onSubmit: sendQuery,
     validationSchema: Yup.object().shape({
-      nombre: Yup.string().required("Please write your name here.").max(50, "Name must be 50 characters max."),
-      email: Yup.string().required("Please write your email here.").email("This field must contain an email address."),
-      consulta: Yup.string().required("Please write your contact message here."),
+      nombre: Yup.string().required(t("content.contact.form.errors.name.required")).max(50, t("content.contact.form.errors.name.max")),
+      email: Yup.string().required(t("content.contact.form.errors.email.required")).email(t("content.contact.form.errors.email.email")),
+      consulta: Yup.string().required(t("content.contact.form.errors.message.required")),
     }),
     validateOnChange: false,
   });
