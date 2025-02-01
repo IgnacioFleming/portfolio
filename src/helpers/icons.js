@@ -20,4 +20,6 @@ export const icons = {
   expressWhite: "/icons/express-white.svg",
   mysqlWhite: "/icons/mysql-white.svg",
   quote: "/icons/quote.svg",
+  ukFlag: "/icons/uk-flag.svg",
+  esFlag: "/icons/spain-flag.svg",
 };

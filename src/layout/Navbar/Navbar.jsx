@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
+import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
 
 function Navbar({ className }) {
   const { t } = useTranslation();
   return (
-    <nav className={`hidden sm:block h-24 flex items-center justify-end ${className}`}>
+    <nav className={`hidden sm:flex h-24 flex-nowrap items-center justify-end ${className}`}>
       <ul className="flex justify-end items-center gap-5 h-full text-lg font-semibold navbar">
         <a href="#home">
           <li>{t("navbar.home")}</li>
@@ -22,6 +23,7 @@ function Navbar({ className }) {
           <li>{t("navbar.contact")}</li>
         </a>
       </ul>
+      <LanguageSelector />
     </nav>
   );
 }
