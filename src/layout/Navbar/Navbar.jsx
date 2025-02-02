@@ -23,7 +23,9 @@ function Navbar({ className }) {
           <li>{t("navbar.contact")}</li>
         </a>
       </ul>
-      <LanguageSelector />
+      <div className="mx-1">
+        <LanguageSelector />
+      </div>
     </nav>
   );
 }
