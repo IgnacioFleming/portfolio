@@ -2,6 +2,7 @@ import { Button, Divider, Drawer, Link, List, ListItem, ListItemButton, ListItem
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { GiHamburgerMenu } from "react-icons/gi";
+import LanguageSwitch from "../../components/LanguageSelector/LanguageSwitch";
 
 const textStyle = {
   color: "var(--primary)",
@@ -47,6 +48,9 @@ const MobileDrawer = ({ open, collapseDrawer }) => {
         </Toolbar>
         <Divider />
         <List>
+          <ListItem sx={{ paddingLeft: "28px" }}>
+            <LanguageSwitch />
+          </ListItem>
           {sections.map((section) => {
             return (
               <Link key={section.title} href={`#${section.path}`} underline="none">

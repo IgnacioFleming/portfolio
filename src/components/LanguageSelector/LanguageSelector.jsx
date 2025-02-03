@@ -26,7 +26,6 @@ const flags = {
 export default function LanguageSelector() {
   const [flag, setFlag] = useState(localStorage.getItem("lang") === flags[20].lang ? 20 : 10);
   const { i18n } = useTranslation();
-  console.log(flag);
 
   const handleChange = (event) => {
     const lang = event.target.value;
