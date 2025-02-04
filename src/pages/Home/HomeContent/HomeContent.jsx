@@ -4,9 +4,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import styles from "../Home.module.css";
 import { eventChangeColor } from "../../../helpers/utils";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { LanguageContext } from "../../../context/language";
 
 function HomeContent() {
   const { t } = useTranslation();
+  const { lang } = useContext(LanguageContext);
   return (
     <div className="flex flex-col-reverse lg:flex-row justify-center items-center w-full py-16 lg:py-0">
       <div className="w-full lg:w-1/2 flex justify-center">
@@ -17,7 +20,7 @@ function HomeContent() {
           </div>
           <p className={styles.summary}>{t("content.home.description")}</p>
           <div className="flex gap-5 lg:gap-10 items-center">
-            <a download href="/docs/CV Ignacio Fleming - EN.pdf">
+            <a download href={`/docs/CV Ignacio Fleming - ${lang.toUpperCase()}.pdf`}>
               <Button label={t("content.home.download-button")} icon={<MdOutlineFileDownload size={24} />} iconPosition="right" className="shadow-elevated text-black font-bold text-base bg-primary" />
             </a>
             <a href="https://github.com/IgnacioFleming" target="_blank">

@@ -1,10 +1,10 @@
 import Box from "@mui/material/Box";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { icons } from "../../helpers/icons";
 import { Avatar } from "@mui/material";
-import { useTranslation } from "react-i18next";
+import { LanguageContext } from "../../context/language";
 
 const selectStyle = {
   height: "40px",
@@ -24,14 +24,13 @@ const flags = {
 };
 
 export default function LanguageSelector() {
-  const [flag, setFlag] = useState(localStorage.getItem("lang") === flags[20].lang ? 20 : 10);
-  const { i18n } = useTranslation();
+  const { lang, changeLang } = useContext(LanguageContext);
+  const [flag, setFlag] = useState(lang === flags[20].lang ? 20 : 10);
 
   const handleChange = (event) => {
-    const lang = event.target.value;
-    setFlag(lang);
-    i18n.changeLanguage(flags[lang].lang);
-    return localStorage.setItem("lang", flags[lang].lang);
+    const newLang = event.target.value;
+    setFlag(newLang);
+    return changeLang(flags[newLang].lang);
   };
 
   return (

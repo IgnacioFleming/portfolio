@@ -1,7 +1,7 @@
 import { Avatar, Box, Switch } from "@mui/material";
 import { icons } from "../../helpers/icons";
-import { useEffect, useRef, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useContext, useEffect, useState } from "react";
+import { LanguageContext } from "../../context/language";
 
 const switchStyle = {
   "& .MuiSwitch-track": {
@@ -19,19 +19,15 @@ const switchStyle = {
 };
 
 function LanguageSwitch() {
-  const [checked, setChecked] = useState(localStorage.getItem("lang") === "es");
-  const { i18n } = useTranslation();
+  const { lang, changeLang } = useContext(LanguageContext);
+  const [checked, setChecked] = useState(lang === "es");
+
   useEffect(() => {
-    const currentLang = localStorage.getItem("lang") || "en";
-    setChecked(currentLang === "es");
-    i18n.changeLanguage(currentLang);
+    changeLang(checked ? "es" : "en");
   }, [checked]);
 
   const handleChange = (e) => {
-    const checkLang = e.target.checked ? "es" : "en";
     setChecked(!checked);
-    i18n.changeLanguage(checkLang);
-    localStorage.setItem("lang", checkLang);
   };
 
   return (
