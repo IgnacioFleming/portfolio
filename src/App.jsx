@@ -7,7 +7,7 @@ import { useShowFixedNavbar } from "./hooks/useShowFixedNavbar";
 import CursorBubble from "./components/CursorBubble/CursorBubble";
 import { useDeviceHasCursor } from "./hooks/useDeviceHasCursor";
 import FixedNavbar from "./layout/Navbar/FixedNavbar";
-import LanguageContextProvider from "./context/language";
+import LanguageContextProvider from "./context/Language";
 
 function App() {
   const showNavbar = useShowFixedNavbar();
