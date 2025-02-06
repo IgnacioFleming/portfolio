@@ -5,7 +5,7 @@ import styles from "../Home.module.css";
 import { eventChangeColor } from "../../../helpers/utils";
 import { useTranslation } from "react-i18next";
 import { useContext } from "react";
-import { LanguageContext } from "../../../context/language";
+import { LanguageContext } from "../../../context/Language";
 
 function HomeContent() {
   const { t } = useTranslation();

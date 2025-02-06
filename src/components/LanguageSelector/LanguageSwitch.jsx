@@ -1,7 +1,7 @@
 import { Avatar, Box, Switch } from "@mui/material";
 import { icons } from "../../helpers/icons";
 import { useContext, useEffect, useState } from "react";
-import { LanguageContext } from "../../context/language";
+import { LanguageContext } from "../../context/Language";
 
 const switchStyle = {
   "& .MuiSwitch-track": {

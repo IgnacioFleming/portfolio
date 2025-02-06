@@ -4,7 +4,7 @@ import Select from "@mui/material/Select";
 import { useContext, useState } from "react";
 import { icons } from "../../helpers/icons";
 import { Avatar } from "@mui/material";
-import { LanguageContext } from "../../context/language";
+import { LanguageContext } from "../../context/Language";
 
 const selectStyle = {
   height: "40px",
