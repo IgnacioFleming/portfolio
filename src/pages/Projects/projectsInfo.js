@@ -3,7 +3,7 @@ export const projects = [
   {
     title: `${root}.business-manager.title`,
     description: `${root}.business-manager.description`,
-    imagePath: "/images/business-manager.png",
+    imagePath: "/images/business-manager.webp",
     frontEndRepositoryPath: "https://github.com/IgnacioFleming/management-system-frontend",
     backEndRepositoryPath: "https://github.com/IgnacioFleming/backoffice-backend",
     deploy: "https://management-system-frontend-five.vercel.app",
@@ -12,7 +12,7 @@ export const projects = [
   {
     title: `${root}.the-office-store.title`,
     description: `${root}.the-office-store.description`,
-    imagePath: "/images/the-office-store.png",
+    imagePath: "/images/the-office-store.webp",
     frontEndRepositoryPath: "https://github.com/IgnacioFleming/webapp_ecommerce_frontend",
     backEndRepositoryPath: "https://github.com/IgnacioFleming/app-ecommerce-backend",
     deploy: "https://webapp-ecommerce-frontend.vercel.app",
@@ -21,7 +21,7 @@ export const projects = [
   {
     title: `${root}.vizcacha-wines.title`,
     description: `${root}.vizcacha-wines.description`,
-    imagePath: "/images/vizcacha-wines.png",
+    imagePath: "/images/vizcacha-wines.webp",
     frontEndRepositoryPath: "https://github.com/IgnacioFleming/vizcacha-wines",
     deploy: "https://vizcacha-wines.vercel.app",
     stack: ["reactJS", "materialUI", "firebase"],
@@ -29,7 +29,7 @@ export const projects = [
   {
     title: `${root}.serminca.title`,
     description: `${root}.serminca.description`,
-    imagePath: "/images/serminca.png",
+    imagePath: "/images/serminca.webp",
     frontEndRepositoryPath: "https://github.com/IgnacioFleming/Serminca",
     deploy: "https://serminca.vercel.app",
     stack: ["reactJS", "materialUI", "firebase"],

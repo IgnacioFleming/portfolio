@@ -9,7 +9,7 @@ import { Trans, useTranslation } from "react-i18next";
 const Contact = ({ handleChange, handleSubmit, errors, values }) => {
   const { t } = useTranslation();
   return (
-    <section id="contact" className="flex justify-center py-24 bg-[url('/images/background-code.png')] bg-dark bg-cover">
+    <section id="contact" className="flex justify-center py-24 bg-[url('/images/background-code.webp')] bg-dark bg-cover">
       <div className="w-11/12">
         <h1>
           <Trans i18nKey="content.contact.title">
