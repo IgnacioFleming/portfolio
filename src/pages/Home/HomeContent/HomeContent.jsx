@@ -33,7 +33,7 @@ function HomeContent() {
         </div>
       </div>
       <div className="w-full lg:w-1/2 flex justify-center lg:justify-end p-0 sm:p-12">
-        <img src="/images/profile.webp" alt="Profile image" className="w-60 h-60 sm:w-80 sm:h-80 rounded-full" />
+        <img src="/images/profile.webp" alt="Profile image" className="w-60 h-60 sm:w-80 sm:h-80 rounded-full object-right" />
       </div>
     </div>
   );
