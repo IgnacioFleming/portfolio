@@ -4,6 +4,7 @@ export const frontendSkills = [
   { name: "HTML", path: icons.html },
   { name: "CSS", path: icons.css },
   { name: "Javascript", path: icons.javascript },
+  { name: "Typescript", path: icons.typescript },
   { name: "React Js", path: icons.reactJS },
   { name: "Vite", path: icons.vite },
   { name: "Material UI", path: icons.materialUI },

@@ -32,6 +32,10 @@
         "serminca": {
           "title": "Serminca",
           "description": "Sitio web profesional para empresa minera, creado con React y diseñado con Material UI. Incluye un formulario de contacto que almacena consultas en Firebase, junto con dos mapas de Google integrados que muestran ubicaciones clave. Las notificaciones por correo electrónico para los envíos de formularios se gestionan mediante un servicio Node.js personalizado."
+        },
+        "todo-app": {
+          "title": "TODO App",
+          "description": "Aplicación de gestión de tareas creada con TypeScript Vanilla. Este proyecto se centra en un código limpio, una arquitectura modular y una buena experiencia de usuario. La aplicación permite a los usuarios agregar, eliminar y marcar tareas como completadas, lo que proporciona una solución intuitiva y liviana para el seguimiento diario de las tareas."
         }
       }
     },

@@ -19,6 +19,14 @@ export const projects = [
     stack: ["reactJS", "materialUI", "expressJS", "nodeJS", "mongoDB"],
   },
   {
+    title: `${root}.todo-app.title`,
+    description: `${root}.todo-app.description`,
+    imagePath: "/images/todo.webp",
+    frontEndRepositoryPath: "https://github.com/IgnacioFleming/to-do",
+    deploy: "https://to-do-iota-lilac.vercel.app",
+    stack: ["typescript", "html", "css"],
+  },
+  {
     title: `${root}.vizcacha-wines.title`,
     description: `${root}.vizcacha-wines.description`,
     imagePath: "/images/vizcacha-wines.webp",
@@ -26,12 +34,12 @@ export const projects = [
     deploy: "https://vizcacha-wines.vercel.app",
     stack: ["reactJS", "materialUI", "firebase"],
   },
-  {
-    title: `${root}.serminca.title`,
-    description: `${root}.serminca.description`,
-    imagePath: "/images/serminca.webp",
-    frontEndRepositoryPath: "https://github.com/IgnacioFleming/Serminca",
-    deploy: "https://serminca.vercel.app",
-    stack: ["reactJS", "materialUI", "firebase"],
-  },
+  // {
+  //   title: `${root}.serminca.title`,
+  //   description: `${root}.serminca.description`,
+  //   imagePath: "/images/serminca.webp",
+  //   frontEndRepositoryPath: "https://github.com/IgnacioFleming/Serminca",
+  //   deploy: "https://serminca.vercel.app",
+  //   stack: ["reactJS", "materialUI", "firebase"],
+  // },
 ];

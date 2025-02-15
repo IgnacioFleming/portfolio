@@ -22,4 +22,5 @@ export const icons = {
   quote: "/icons/quote.svg",
   ukFlag: "/icons/uk-flag.svg",
   esFlag: "/icons/spain-flag.svg",
+  typescript: "/icons/typescript.svg",
 };
