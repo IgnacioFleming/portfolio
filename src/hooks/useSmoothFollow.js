@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export const useSmoothFollow = (timer) => {
   const ref = useRef(null);
@@ -8,8 +8,8 @@ export const useSmoothFollow = (timer) => {
       if (ref.current) {
         ref.current.animate(
           {
-            left: `${e.pageX}px`,
-            top: `${e.pageY}px`,
+            left: `${e.clientX}px`,
+            top: `${e.clientY}px`,
           },
           { duration: timer, fill: "forwards" }
         );
