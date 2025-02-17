@@ -10,7 +10,7 @@
     "home": {
       "name": "IGNACIO FLEMING",
       "position": "Desarrollador Full Stack",
-      "description": "Apasionado por crear soluciones innovadoras a través del desarrollo web. Con años de experiencia como Product Owner, aporto una perspectiva única a la creación de software, combinando habilidades técnicas con conocimientos empresariales. Ya sea que se trate de crear experiencias de usuario fluidas o abordar desafíos de back-end, me encanta brindar valor a través del código.",
+      "description": "Apasionado por crear soluciones web innovadoras. Con una sólida experiencia como Product Owner, aporto una combinación única de habilidades técnicas y visión de negocio. Ya sea diseñando experiencias de usuario fluidas o resolviendo problemas complejos en el backend, mi foco está en generar valor real a través del código.",
       "download-button": "DESCARGAR CV"
     },
     "projects": {
@@ -18,24 +18,24 @@
       "cards": {
         "business-manager": {
           "title": "Business Manager",
-          "description": "Sistema de gestión de productos, clientes y ventas, construido con React en el frontend utilizando PrimeReact para componentes estilados y un backend basado en Node.js, Express y MySQL. Incluye una API RESTful para operaciones CRUD e integración de servicios externos, centrándose en la modularidad y la escalabilidad."
+          "description": "Aplicación web para gestionar productos, clientes y ventas. Desarrollada con React y Node.js, conectada a una base de datos MySQL mediante una API REST. Diseñada para ser escalable, modular e intuitiva en contextos de negocio reales."
         },
 
         "the-office-store": {
           "title": "The Office Store",
-          "description": "Ecommerce completo creado con React y Node.js. Los usuarios pueden buscar productos, agregarlos al carrito y realizar compras. Integrado con Stripe para el procesamiento seguro de pagos e incluye un backend para administrar productos, pedidos y usuarios."
+          "description": "Plataforma de e-commerce completa desarrollada con React y Node.js. Incluye pagos seguros con Stripe, carrito de compras, navegación de productos y un panel de administración para gestionar usuarios, pedidos e inventario."
         },
         "vizcacha-wines": {
           "title": "Vizcacha Wines",
-          "description": "Sitio web institucional para bodega local, creado con React y estilado con Material UI. El sitio cuenta con secciones esenciales y un formulario de contacto integrado con Firebase para almacenar consultas. Además, un servicio Node.js personalizado envía notificaciones por correo electrónico a la empresa cuando se envía el formulario."
+          "description": "Sitio institucional para una bodega local, creado con React y Material UI. Incluye formulario de contacto conectado con Firebase Firestore y un servicio en Node.js que envía notificaciones por email."
         },
         "serminca": {
           "title": "Serminca",
-          "description": "Sitio web profesional para empresa minera, creado con React y diseñado con Material UI. Incluye un formulario de contacto que almacena consultas en Firebase, junto con dos mapas de Google integrados que muestran ubicaciones clave. Las notificaciones por correo electrónico para los envíos de formularios se gestionan mediante un servicio Node.js personalizado."
+          "description": "Sitio profesional para una empresa minera, desarrollado con React y estilizado con Material UI. Integra mapas de Google y un formulario de contacto dinámico respaldado por Firebase y Node.js."
         },
         "todo-app": {
           "title": "TODO App",
-          "description": "Aplicación de gestión de tareas creada con TypeScript Vanilla. Este proyecto se centra en un código limpio, una arquitectura modular y una buena experiencia de usuario. La aplicación permite a los usuarios agregar, eliminar y marcar tareas como completadas, lo que proporciona una solución intuitiva y liviana para el seguimiento diario de las tareas."
+          "description": "Aplicación liviana para gestión de tareas, desarrollada con TypeScript puro. Enfocada en arquitectura modular, código limpio y una experiencia de usuario fluida para el seguimiento diario de tareas."
         }
       }
     },
@@ -50,10 +50,10 @@
     "about-me": {
       "title": "SOBRE MÍ",
       "paragraphs": {
-        "p1": "Mi camino en el mundo del desarrollo comenzó en 2022, durante mi tiempo trabajando en operaciones administrativas de una firma de corretaje de bolsa. Allí aprendí a programar en VBA y automaticé la mayoría de los procesos que teníamos mediante la creación de macros.",
-        "p2": "A medida que mis habilidades fueron creciendo, pasé al área de Producto, donde dirigí proyectos clave, incluida la gestión de flujos de entrada y salida de dinero efectivo, saldos y tenencias en los mercados tradicionales. Uno de mis logros más importantes fue liderar el desarrollo de una aplicación de criptomonedas desde su inicio hasta su lanzamiento al mercado, una experiencia desafiante pero increíblemente gratificante.",
-        "p3": "Paralelamente a mi trayectoria profesional, realicé un bootcamp de Full Stack, lo que despertó mi interés por la programación. Después de completar el bootcamp, seguí aprendiendo y perfeccionando mis habilidades a través de varios cursos y práctica constante, esforzándome por perfeccionar mis conocimientos y mantenerme actualizado con las tendencias de la industria.",
-        "p4": "Estoy ansioso por aportar mis habilidades y pasión a una empresa donde pueda contribuir, crecer y crear soluciones impactantes como desarrollador."
+        "p1": "Mi camino en el desarrollo comenzó en 2022, mientras trabajaba en operaciones de back office en una sociedad de bolsa. Allí empecé a programar en VBA, automatizando la mayoría de los procesos internos con macros personalizadas.",
+        "p2": "A medida que mejoraba mis habilidades técnicas, pasé al área de Producto, donde lideré proyectos clave relacionados con flujos de ingresos y egresos, saldos y tenencias. Uno de mis logros más importantes fue liderar el desarrollo y lanzamiento de una app de criptomonedas desde cero.",
+        "p3": "En paralelo a mi desarrollo profesional, completé un bootcamp Full Stack que potenció mi interés por la programación web. Desde entonces sigo formándome con cursos y práctica constante, buscando siempre estar actualizado con las tecnologías del sector.",
+        "p4": "Me entusiasma sumarme a un equipo donde pueda seguir creciendo, aportar como desarrollador y ayudar a construir soluciones que generen impacto."
       }
     },
     "contact": {

@@ -10,7 +10,7 @@
     "home": {
       "name": "IGNACIO FLEMING",
       "position": "Full Stack Dev",
-      "description": "Passionate about creating innovative solutions through web development. With years of experience as a Product Owner, I bring a unique perspective to software creation, blending technical skills with business insights. Whether it's building seamless user experiences or tackling back-end challenges, I thrive on delivering value through code.",
+      "description": "Passionate about building innovative web solutions. With a strong background as a Product Owner, I bring a unique mix of technical expertise and business perspective. Whether it’s crafting smooth user experiences or solving complex backend problems, I focus on delivering real value through code.",
       "download-button": "DOWNLOAD RESUME"
     },
     "projects": {
@@ -18,24 +18,24 @@
       "cards": {
         "business-manager": {
           "title": "Business Manager",
-          "description": "Management system for products, clients, and sales, built with React on the frontend using PrimeReact for styled components, and a backend powered by Node.js, Express, and MySQL. It includes a RESTful API for CRUD operations and external service integration, focusing on modularity and scalability."
+          "description": "Web app for managing products, clients, and sales. Built with React and Node.js, connected to a MySQL database through a RESTful API. Designed to be scalable, modular, and intuitive for real-world business operations."
         },
 
         "the-office-store": {
           "title": "The Office Store",
-          "description": "Full e-commerce built with React and Node.js. Users can browse products, add them to the cart, and make purchases. Integrated with Stripe for secure payment processing and includes a backend for managing products, orders, and users."
+          "description": "Full-featured e-commerce platform developed with React and Node.js. Includes secure Stripe payments, product browsing, cart management, and a full admin panel to manage users, orders, and inventory."
         },
         "vizcacha-wines": {
           "title": "Vizcacha Wines",
-          "description": "An institutional website for a local winery, built with React and styled using Material UI. The site features essential sections and a dynamic contact form integrated with Firebase Firestore to store inquiries. Additionally, a custom Node.js service sends email notifications to the company upon form submission."
+          "description": "Institutional site for a local winery, developed with React and Material UI. Features a contact form integrated with Firebase Firestore and a Node.js service to handle email notifications."
         },
         "serminca": {
           "title": "Serminca",
-          "description": "A professional website for a mining company, built using React and styled with Material UI. It features an interactive contact form that stores inquiries in Firebase Firestore, along with two embedded Google Maps showing key locations. The email notifications for form submissions are handled by a custom Node.js service."
+          "description": "Professional website for a mining company, built with React and styled using Material UI. Includes Google Maps integration and a dynamic contact form backed by Firebase and Node.js for notifications."
         },
         "todo-app": {
           "title": "TODO App",
-          "description": "Task management application built with Vanilla TypeScript. This project focuses on clean code, modular architecture, and seamless user experience. The app allows users to add, delete, and mark tasks as completed, providing an intuitive and lightweight solution for daily task tracking."
+          "description": "Lightweight task management app built with Vanilla TypeScript. Focused on clean code, modular structure, and a smooth user experience for daily task tracking."
         }
       }
     },
@@ -50,10 +50,10 @@
     "about-me": {
       "title": "ABOUT ME",
       "paragraphs": {
-        "p1": "My journey into the world of development began in 2022, during my time working in the back-office operations of a stock brokerage firm. While there, I learned to program in VBA and automated most of the processes we had by creating macros.",
-        "p2": "As my skills grew, I transitioned into the Product area, where I led key projects, including managing cash-in/cash-out flows, balances, and holdings in traditional markets. One of my proudest achievements was leading the development of a cryptocurrency app from its inception to market launch — a challenging but incredibly rewarding experience.",
-        "p3": "Alongside my professional journey, I pursued a Full Stack bootcamp, which sparked my interest in programming. After completing the bootcamp, I continued learning and honing my skills through various courses and constant practice, striving to perfect my knowledge and stay up to date with industry trends.",
-        "p4": "I'm eager to bring my skills and passion to a company where I can contribute, grow, and create impactful solutions as a developer."
+        "p1": "My journey into software development began in 2022, while working in the back-office operations of a stock brokerage firm. I started programming in VBA, automating most internal processes through custom macros.",
+        "p2": "As I improved my technical skills, I moved into the Product team, leading key projects related to cash-in/out flows, account balances, and holdings. One of my proudest accomplishments was leading the launch of a cryptocurrency app from scratch.",
+        "p3": "Alongside my professional growth, I completed a Full Stack bootcamp that deepened my interest in web development. I’ve since continued my learning through courses and hands-on practice, always striving to stay current with modern technologies.",
+        "p4": "I’m eager to join a team where I can keep growing, contribute as a developer, and help build meaningful solutions through code."
       }
     },
     "contact": {
