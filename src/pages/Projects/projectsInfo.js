@@ -1,6 +1,14 @@
 const root = "content.projects.cards";
 export const projects = [
   {
+    title: `${root}.whatsapp-clone.title`,
+    description: `${root}.whatsapp-clone.description`,
+    imagePath: "/images/wonder-chat.webp",
+    backEndRepositoryPath: "https://github.com/IgnacioFleming/wonder-chat",
+    deploy: "https://wonder-chat-production.up.railway.app",
+    stack: ["typescript", "nodeJS", "mongoDB"],
+  },
+  {
     title: `${root}.business-manager.title`,
     description: `${root}.business-manager.description`,
     imagePath: "/images/business-manager.webp",

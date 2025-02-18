@@ -16,6 +16,10 @@
     "projects": {
       "title": "PROYECTOS",
       "cards": {
+        "whatsapp-clone": {
+          "title": "Clon de WhatsApp Web",
+          "description": "Aplicación de mensajería en tiempo real inspirada en WhatsApp Web. Desarrollada con React, Node.js y WebSockets, incluye autenticación de usuarios, salas de chat, historial de mensajes y comunicación en vivo. Diseñada con arquitectura modular y foco en el rendimiento, es un claro ejemplo de desarrollo full stack aplicado."
+        },
         "business-manager": {
           "title": "Business Manager",
           "description": "Aplicación web para gestionar productos, clientes y ventas. Desarrollada con React y Node.js, conectada a una base de datos MySQL mediante una API REST. Diseñada para ser escalable, modular e intuitiva en contextos de negocio reales."
