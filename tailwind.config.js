@@ -23,7 +23,7 @@ export default {
         },
       },
       boxShadow: {
-        elevated: "0px 8px 16px #10245b, 2px 12px 24px #051031",
+        elevated: "0px 8px 16px rgb(8, 25, 70), 2px 12px 24px rgb(2, 10, 36)",
         overWhite: "0px 8px 16px #a2a1a1b4",
       },
       backgroundColor: {
