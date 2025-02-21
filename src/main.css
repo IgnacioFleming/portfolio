@@ -44,6 +44,31 @@ p {
   height: 500px;
   width: 300px;
 }
+@media (max-width: 650px) {
+  .projects-container:not(.show-all) .card-container:nth-child(n + 4) {
+    display: none;
+  }
+  .projects-container.show-all .card-container:nth-child(n + 4) {
+    transform-origin: top;
+    animation: showMore 0.5s ease-in-out;
+  }
+  .projects-container.hide-anim .card-container:nth-child(n + 4) {
+    animation: showLess 0.5s ease-in-out;
+  }
+}
+
+@keyframes showMore {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scaleY(0);
+  }
+}
+@keyframes showLess {
+  to {
+    opacity: 0;
+    transform: translateY(20px) scaleY(0);
+  }
+}
 
 .navbar li {
   cursor: pointer;

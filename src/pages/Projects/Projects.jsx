@@ -1,19 +1,41 @@
-// import { useRef } from "react";
 import Card from "../../components/Card/Card";
 import { projects } from "./projectsInfo";
 import { renderFooter } from "./renderFooter";
-// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-// import { useJustifyOverflownContent } from "../../hooks/useJustifyOverflownContent";
-// import { useHandleDragging } from "../../hooks/useHandleDragging";
 import { useTranslation } from "react-i18next";
 import styles from "./Projects.module.css";
+import { useRef, useState } from "react";
+import { Button, createTheme, ThemeProvider } from "@mui/material";
+
+const theme = createTheme({
+  palette: {
+    cyan: {
+      main: "#80f0ff",
+    },
+  },
+});
 
 function Projects() {
-  // const containerRef = useRef(null);
-  // const isWideViewport = window.innerWidth >= 1600;
-  // const isNarrowViewport = window.innerWidth < 640;
-  // const justifyContent = useJustifyOverflownContent("justify-center", containerRef);
-  // const { showLeftArrow, showRightArrow, handleArrowClick, handleMouseDown, handleMouseUp, handleMouseMove, showDragScroll } = useHandleDragging(containerRef, isWideViewport);
+  const [showAll, setShowAll] = useState(false);
+  const [isHiding, setIsHiding] = useState(false);
+  const scrollBackRef = useRef(null);
+
+  const scrollBackToProjects = () => {
+    const yOffset = 1200;
+    const y = scrollBackRef.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  };
+  const toggleShowAll = () => {
+    if (showAll) {
+      setIsHiding(true);
+      if (scrollBackRef.current) scrollBackToProjects();
+      setTimeout(() => {
+        setShowAll(false);
+        setIsHiding(false);
+      }, 450);
+    } else {
+      setShowAll(true);
+    }
+  };
   const { t } = useTranslation();
 
   return (
@@ -21,18 +43,22 @@ function Projects() {
       <div className="w-full lg:w-11/12">
         <h1 className="text-center">{t("content.projects.title")}</h1>
         <div className="relative">
-          <div className={`relative grid w-full ${styles.projectGrid} gap-y-24 my-24  select-none projects-container`} style={{ scrollbarWidth: "none" }}>
-            {/*  ref={containerRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} */}
+          <div ref={scrollBackRef} className={`relative grid w-full ${styles.projectGrid} ${showAll ? "show-all" : ""} ${isHiding ? "hide-anim" : ""} gap-y-24 my-24  select-none projects-container`} style={{ scrollbarWidth: "none" }}>
             {projects.map((project, index) => {
               return (
-                <article key={index} className="flex justify-center">
+                <article key={index} className={`flex justify-center card-container ${showAll}`}>
                   <Card title={t(project.title)} description={t(project.description)} imagePath={project.imagePath} footer={renderFooter(project)} />
                 </article>
               );
             })}
           </div>
-          {/* {!isWideViewport && !isNarrowViewport && showLeftArrow && <FaChevronLeft onClick={() => handleArrowClick("left")} className="absolute left-0 top-1/2 -translate-y-1/2 drop-shadow-lg cursor-pointer" size={80} color="white" />} */}
-          {/* {!isWideViewport && !isNarrowViewport && showRightArrow && <FaChevronRight onClick={handleArrowClick} className="absolute  right-0 top-1/2 -translate-y-1/2  drop-shadow-lg cursor-pointer" size={80} color="white" />} */}
+          <div className="flex justify-center sm:hidden -my-20">
+            <ThemeProvider theme={theme}>
+              <Button onClick={toggleShowAll} variant="outlined" color="cyan">
+                {showAll ? "Show less" : "Show more"}
+              </Button>
+            </ThemeProvider>
+          </div>
         </div>
       </div>
     </section>
