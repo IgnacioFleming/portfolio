@@ -9,7 +9,7 @@ function BurgerNavbar() {
   return (
     <>
       <header className="block sm:hidden h-24">
-        <GiHamburgerMenu style={{ position: "sticky", top: 10, right: 10, margin: 10 }} size={50} onClick={collapseDrawer} />
+        <GiHamburgerMenu style={{ position: "absolute", top: 10, right: 10, margin: 10 }} size={50} onClick={collapseDrawer} />
       </header>
       <MobileDrawer open={open} setOpen={setOpen} collapseDrawer={collapseDrawer} />
     </>
