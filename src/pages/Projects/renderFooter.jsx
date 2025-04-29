@@ -19,20 +19,26 @@ export const renderFooter = (project) => {
           <a href={project.deploy} target="_blank" className="flex items-center">
             <Button label="WEBSITE" className="text-primary hover:text-black font-semibold border-none h-10 w-auto shadow-overWhite bg-dark" icon={<FaExternalLinkAlt />} iconPosition="right" />
           </a>
-          {/* 
-          comment this code temporaly
-          <div className="flex flex-col gap-1 h-10">
-            <a href={project.frontEndRepositoryPath} target="_blank" className="flex gap-1 align-start text-sm">
-              <FaCode size={18} />
-              FrontEnd
-            </a>
+          <div className="flex flex-col gap-1 h-10 justify-center">
+            {project.codebasePath && (
+              <a href={project.codebasePath} target="_blank" className="flex gap-1 align-start text-sm">
+                <FaCode size={18} />
+                Codebase
+              </a>
+            )}
+            {project.frontEndRepositoryPath && (
+              <a href={project.frontEndRepositoryPath} target="_blank" className="flex gap-1 align-start text-sm">
+                <FaCode size={18} />
+                FrontEnd
+              </a>
+            )}
             {project.backEndRepositoryPath && (
               <a href={project.backEndRepositoryPath} target="_blank" className="flex gap-1 align-start text-sm">
                 <FaCode size={18} />
                 BackEnd
               </a>
             )}
-          </div> */}
+          </div>
         </div>
       </div>
     </footer>
