@@ -43,7 +43,7 @@ function Projects() {
       <div className="w-full lg:w-11/12">
         <h1 className="text-center">{t("content.projects.title")}</h1>
         <div className="relative">
-          <div ref={scrollBackRef} className={`relative grid w-full ${styles.projectGrid} ${showAll ? "show-all" : ""} ${isHiding ? "hide-anim" : ""} gap-y-24 my-24  select-none projects-container`} style={{ scrollbarWidth: "none" }}>
+          <div ref={scrollBackRef} className={`relative  w-full ${styles.projectGrid} ${showAll ? "show-all" : ""} ${isHiding ? "hide-anim" : ""} gap-y-24 my-24  select-none projects-container`} style={{ scrollbarWidth: "none" }}>
             {projects.map((project, index) => {
               return (
                 <article key={index} className={`flex justify-center card-container ${showAll}`}>
