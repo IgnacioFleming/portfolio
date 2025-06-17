@@ -18,7 +18,7 @@
       "cards": {
         "whatsapp-clone": {
           "title": "Clon de WhatsApp Web",
-          "description": "Aplicación de mensajería en tiempo real inspirada en WhatsApp Web. Desarrollada con React, Node.js y WebSockets, incluye autenticación de usuarios, salas de chat, historial de mensajes y comunicación en vivo. Diseñada con arquitectura modular y foco en el rendimiento, es un claro ejemplo de desarrollo full stack aplicado."
+          "description": "Aplicación de mensajería en tiempo real inspirada en WhatsApp Web. Desarrollada con Typescript, Node.js y WebSockets, incluye autenticación de usuarios, conversaciones, historial de mensajes y comunicación en vivo. Diseñada con arquitectura modular y foco en el rendimiento, es un claro ejemplo de desarrollo full stack aplicado."
         },
         "business-manager": {
           "title": "Business Manager",
