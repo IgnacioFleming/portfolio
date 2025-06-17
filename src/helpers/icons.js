@@ -1,6 +1,7 @@
 export const icons = {
   reactJS: "/icons/react.svg",
   primereact: "/icons/primereact.svg",
+  zustand: "/icons/zustand.svg",
   mySQL: "/icons/mysql.svg",
   nodeJS: "/icons/nodeJS.svg",
   expressJS: "/icons/express.svg",
@@ -8,6 +9,7 @@ export const icons = {
   firebase: "/icons/firebase.svg",
   materialUI: "/icons/materialUI.svg",
   css: "/icons/css.svg",
+  sass: "/icons/sass.svg",
   git: "/icons/git.svg",
   html: "/icons/html.svg",
   javascript: "/icons/javascript.svg",

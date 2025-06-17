@@ -3,9 +3,11 @@ import { icons } from "../../helpers/icons";
 export const frontendSkills = [
   { name: "HTML", path: icons.html },
   { name: "CSS", path: icons.css },
+  { name: "SASS", path: icons.sass },
   { name: "Javascript", path: icons.javascript },
   { name: "Typescript", path: icons.typescript },
   { name: "React Js", path: icons.reactJS },
+  { name: "Zustand", path: icons.zustand },
   { name: "Vite", path: icons.vite },
   { name: "Material UI", path: icons.materialUI },
   { name: "Primereact", path: icons.primereact },
