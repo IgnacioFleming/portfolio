@@ -34,7 +34,7 @@ const ContactoContainer = ({ fontStyles }) => {
         body: JSON.stringify({
           transporter: "portfolio",
           subject: `Tenés una oferta de ${query.nombre}`,
-          text: query,
+          html: `<p>${query}</p>`,
         }),
       });
       Swal.fire({
