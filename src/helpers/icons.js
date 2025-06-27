@@ -14,6 +14,8 @@ export const icons = {
   html: "/icons/html.svg",
   javascript: "/icons/javascript.svg",
   vite: "/icons/vite.svg",
+  vitest: "/icons/vitest.svg",
+  reactTestingLibrary: "/icons/react-testing-library.svg",
   postgreSQL: "/icons/postgreSQL.svg",
   postman: "/icons/postman.svg",
   jira: "/icons/jira.svg",

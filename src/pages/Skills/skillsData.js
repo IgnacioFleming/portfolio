@@ -17,12 +17,14 @@ export const frontendSkills = [
 export const backendAndDBSkills = [
   { name: "Node JS", path: icons.nodeJS },
   { name: "Express JS", path: icons.expressWhite },
-  { name: "Jest", path: icons.jest },
   { name: "MongoDB", path: icons.mongoDB },
   { name: "MySQL", path: icons.mysqlWhite },
   { name: "PostgreSQL", path: icons.postgreSQL },
 ];
 export const toolsSkills = [
+  { name: "Jest", path: icons.jest },
+  { name: "Vitest", path: icons.vitest },
+  { name: "React Testing Library", path: icons.reactTestingLibrary },
   { name: "Firebase", path: icons.firebase },
   { name: "Git", path: icons.git },
   { name: "Postman", path: icons.postman },

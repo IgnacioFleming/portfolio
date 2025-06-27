@@ -46,9 +46,9 @@
     "skills": {
       "title": "SKILLS",
       "sections": {
-        "frontend": "FRONTEND",
-        "backend": "BACKEND",
-        "tools": "TOOLS"
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "tools": "Testing and Dev Tools"
       }
     },
     "about-me": {
