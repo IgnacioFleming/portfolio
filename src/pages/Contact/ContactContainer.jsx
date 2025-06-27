@@ -38,7 +38,7 @@ const ContactoContainer = ({ fontStyles }) => {
           <p><strong>Nombre:</strong> ${query.nombre}</p>
           <p><strong>Email:</strong> ${query.email}</p>
           <p><strong>Consulta:</strong> ${query.consulta}</p>
-e          `,
+        `,
         }),
       });
       Swal.fire({
