@@ -26,7 +26,7 @@ const ContactoContainer = ({ fontStyles }) => {
     try {
       await addDoc(queriesCollection, query);
 
-      await fetch(`${import.meta.env.VITE_APP_URL_BASE}/api/sendEmail`, {
+      await fetch("https://email-sender-nu.vercel.app/api/sendEmail", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
