@@ -36,12 +36,9 @@ const ContactoContainer = ({ fontStyles }) => {
           subject: `Tenés una oferta de ${query.nombre}`,
           html: `
           <p><strong>Nombre:</strong> ${query.nombre}</p>
-          <br />
           <p><strong>Email:</strong> ${query.email}</p>
-          <br />
           <p><strong>Consulta:</strong> ${query.consulta}</p>
-          <br />
-          `,
+e          `,
         }),
       });
       Swal.fire({
