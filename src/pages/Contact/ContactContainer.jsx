@@ -32,9 +32,9 @@ const ContactoContainer = ({ fontStyles }) => {
           "Content-type": "application/json",
         },
         body: JSON.stringify({
-          transporter: "vizcacha",
-          subject: `Nueva consulta de ${query.nombre}`,
-          html: emailTemplate(query.nombre, query.email, query.consulta),
+          transporter: "portfolio",
+          subject: `Tenés una oferta de ${query.nombre}`,
+          text: query,
         }),
       });
       Swal.fire({
