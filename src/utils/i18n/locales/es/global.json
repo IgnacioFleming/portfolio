@@ -1,21 +1,25 @@
 {
   "navbar": {
-    "home": "INICIO",
-    "projects": "PROYECTOS",
-    "skills": "HABILIDADES",
-    "about-me": "SOBRE MI",
-    "contact": "CONTACTO"
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "about-me": "Sobre Mi",
+    "contact": "Contacto"
   },
   "content": {
     "home": {
-      "name": "IGNACIO FLEMING",
+      "name": "Ignacio Fleming",
       "position": "Desarrollador Full Stack",
       "description": "Apasionado por crear soluciones web innovadoras. Con una sólida experiencia como Product Owner, aporto una combinación única de habilidades técnicas y visión de negocio. Ya sea diseñando experiencias de usuario fluidas o resolviendo problemas complejos en el backend, mi foco está en generar valor real a través del código.",
-      "download-button": "DESCARGAR CV"
+      "download-button": "Descargar CV"
     },
     "projects": {
-      "title": "PROYECTOS",
+      "title": "Proyectos",
       "cards": {
+        "frontend-mentoring": {
+          "title": "Mentoría Frontend",
+          "description": "Mentoría práctica orientada al mundo laboral, guiada por un Tech Lead de una empresa de EE.UU. Este programa perfecciona mis habilidades en desarrollo frontend con foco en React, TypeScript, Zustand, TanStack Query, testing y buenas prácticas. Simula un entorno de trabajo real con tareas semanales, code reviews y metodologías ágiles."
+        },
         "whatsapp-clone": {
           "title": "Clon de WhatsApp Web",
           "description": "Aplicación de mensajería en tiempo real inspirada en WhatsApp Web. Desarrollada con Typescript, Node.js y WebSockets, incluye autenticación de usuarios, conversaciones, historial de mensajes y comunicación en vivo. Diseñada con arquitectura modular y foco en el rendimiento, es un claro ejemplo de desarrollo full stack aplicado."
@@ -38,21 +42,21 @@
           "description": "Sitio profesional para una empresa minera, desarrollado con React y estilizado con Material UI. Integra mapas de Google y un formulario de contacto dinámico respaldado por Firebase y Node.js."
         },
         "todo-app": {
-          "title": "TODO App",
+          "title": "ToDo App",
           "description": "Aplicación liviana para gestión de tareas, desarrollada con TypeScript puro. Enfocada en arquitectura modular, código limpio y una experiencia de usuario fluida para el seguimiento diario de tareas."
         }
       }
     },
     "skills": {
-      "title": "HABILIDADES",
+      "title": "Habilidades",
       "sections": {
-        "frontend": "FRONTEND",
-        "backend": "BACKEND",
-        "tools": "HERRAMIENTAS"
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "tools": "Herramientas"
       }
     },
     "about-me": {
-      "title": "SOBRE MÍ",
+      "title": "Sobre Mí",
       "paragraphs": {
         "p1": "Mi camino en el desarrollo comenzó en 2022, mientras trabajaba en operaciones de back office en una sociedad de bolsa. Allí empecé a programar en VBA, automatizando la mayoría de los procesos internos con macros personalizadas.",
         "p2": "A medida que mejoraba mis habilidades técnicas, pasé al área de Producto, donde lideré proyectos clave relacionados con flujos de ingresos y egresos, saldos y tenencias. Uno de mis logros más importantes fue liderar el desarrollo y lanzamiento de una app de criptomonedas desde cero.",
@@ -61,12 +65,12 @@
       }
     },
     "contact": {
-      "title": "CONECTEMOS!",
+      "title": "Conectemos!",
       "form": {
         "placeholders": {
-          "name": "NOMBRE",
-          "email": "EMAIL",
-          "message": "MENSAJE"
+          "name": "Nombre",
+          "email": "Email",
+          "message": "Mensaje"
         },
         "errors": {
           "name": {
@@ -81,10 +85,10 @@
             "required": "Por favor escribe tu mensaje aquí."
           }
         },
-        "send-button": "ENVIAR"
+        "send-button": "Enviar"
       },
       "media": {
-        "title": "REDES"
+        "title": "Redes"
       }
     }
   }

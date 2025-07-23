@@ -5,7 +5,7 @@ function Navbar({ className }) {
   const { t } = useTranslation();
   return (
     <nav className={`hidden sm:flex h-24 flex-nowrap items-center justify-end ${className}`}>
-      <ul className="flex justify-end items-center gap-5 h-full text-lg font-semibold navbar">
+      <ul className="flex justify-end items-center gap-5 h-full text-lg font-semibold navbar uppercase">
         <a href="#home">
           <li>{t("navbar.home")}</li>
         </a>

@@ -7,6 +7,7 @@ import LanguageSwitch from "../../components/LanguageSelector/LanguageSwitch";
 const textStyle = {
   color: "var(--primary)",
   paddingLeft: "12px",
+  textTransform: "uppercase",
 };
 const ItemStyle = {
   height: 50,

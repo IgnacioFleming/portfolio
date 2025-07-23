@@ -7,7 +7,7 @@ function AboutMe() {
     <section id="aboutMe" className="flex justify-center bg-primary py-24">
       <div className="w-11/12 flex flex-col lg:flex-row">
         <div className="w-full lg:w-9/12 flex flex-col items-center">
-          <h1 className="text-secondary w-full">{t("content.about-me.title")}</h1>
+          <h1 className="text-secondary w-full uppercase">{t("content.about-me.title")}</h1>
           <div className="md:my-12 w-full lg:w-5/6">
             <div className="text-secondary">{useGetTextAboutMe()}</div>
           </div>

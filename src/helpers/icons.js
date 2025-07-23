@@ -27,4 +27,6 @@ export const icons = {
   ukFlag: "/icons/uk-flag.svg",
   esFlag: "/icons/spain-flag.svg",
   typescript: "/icons/typescript.svg",
+  figma: "/icons/figma.svg",
+  tanstackQuery: "/icons/tanstack-query.svg",
 };

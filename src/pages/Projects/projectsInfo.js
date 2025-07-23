@@ -1,6 +1,14 @@
 const root = "content.projects.cards";
 export const projects = [
   {
+    title: `${root}.frontend-mentoring.title`,
+    description: `${root}.frontend-mentoring.description`,
+    imagePath: "/images/mentoring-ecommerce.webp",
+    codebasePath: "https://github.com/IgnacioFleming/react-mentoring-ecommerce-ifleming",
+    deploy: "https://react-mentoring-ecommerce-ifleming.vercel.app/",
+    stack: ["typescript", "reactJS", "zustand", "tanstackQuery"],
+  },
+  {
     title: `${root}.whatsapp-clone.title`,
     description: `${root}.whatsapp-clone.description`,
     imagePath: "/images/wonder-chat.webp",
@@ -27,14 +35,6 @@ export const projects = [
     stack: ["reactJS", "materialUI", "expressJS", "nodeJS", "mongoDB"],
   },
   {
-    title: `${root}.todo-app.title`,
-    description: `${root}.todo-app.description`,
-    imagePath: "/images/todo.webp",
-    codebasePath: "https://github.com/IgnacioFleming/to-do",
-    deploy: "https://to-do-iota-lilac.vercel.app",
-    stack: ["typescript", "html", "css"],
-  },
-  {
     title: `${root}.vizcacha-wines.title`,
     description: `${root}.vizcacha-wines.description`,
     imagePath: "/images/vizcacha-wines.webp",
@@ -42,6 +42,14 @@ export const projects = [
     deploy: "https://vizcacha-wines.vercel.app",
     stack: ["reactJS", "materialUI", "firebase"],
   },
+  // {
+  //   title: `${root}.todo-app.title`,
+  //   description: `${root}.todo-app.description`,
+  //   imagePath: "/images/todo.webp",
+  //   codebasePath: "https://github.com/IgnacioFleming/to-do",
+  //   deploy: "https://to-do-iota-lilac.vercel.app",
+  //   stack: ["typescript", "html", "css"],
+  // },
   // {
   //   title: `${root}.serminca.title`,
   //   description: `${root}.serminca.description`,

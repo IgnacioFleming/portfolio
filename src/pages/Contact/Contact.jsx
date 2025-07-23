@@ -11,10 +11,10 @@ const Contact = ({ handleChange, handleSubmit, errors, values }) => {
   return (
     <section id="contact" className="flex justify-center py-24 bg-[url('/images/background-code.webp')] bg-dark bg-cover">
       <div className="w-11/12">
-        <h1>
+        <h1 className="uppercase">
           <Trans i18nKey="content.contact.title">
-            LET'S <br />
-            CONNECT!
+            Let's <br />
+            Connect!
           </Trans>
         </h1>
         <form onSubmit={handleSubmit} className="my-12">
@@ -25,18 +25,18 @@ const Contact = ({ handleChange, handleSubmit, errors, values }) => {
               <TextField multiline rows={8} name="consulta" placeholder={t("content.contact.form.placeholders.message")} value={values.consulta} onChange={handleChange} error={errors.consulta ? true : false} helperText={errors.consulta} />
             </ThemeProvider>
 
-            <Button type="submit" label={t("content.contact.form.send-button")} className="w-24 bg-primary text-secondary font-semibold text-lg" />
+            <Button type="submit" label={t("content.contact.form.send-button")} className="w-24 bg-primary text-secondary font-semibold text-lg uppercase" />
           </div>
         </form>
         <footer className="w-full flex justify-between">
           <div className="h-20 flex flex-col justify-between">
-            <h3>EMAIL</h3>
+            <h3 className="uppercase">Email</h3>
             <a href="mailto:ignacioflemings@gmail.com" target="_blank" className="hover:underline">
               <p>ignacioflemings@gmail.com</p>
             </a>
           </div>
           <div className="h-20 flex flex-col items-center justify-between">
-            <h3>{t("content.contact.media.title")}</h3>
+            <h3 className="uppercase">{t("content.contact.media.title")}</h3>
             <div className="flex gap-3">
               <a href="https://github.com/IgnacioFleming" target="_blank" className="cursor-pointer" onMouseEnter={eventChangeColor({ color: "white" })} onMouseLeave={eventChangeColor({ revert: true })}>
                 <LuGithub size={40} />

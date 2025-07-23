@@ -17,7 +17,7 @@ export const renderFooter = (project) => {
         </div>
         <div className="flex justify-between w-full items-center h-12">
           <a href={project.deploy} target="_blank" className="flex items-center">
-            <Button label="DEMO" className="text-primary hover:text-black font-semibold border-none h-10 w-auto shadow-overWhite bg-dark" icon={<FaExternalLinkAlt />} iconPosition="right" />
+            <Button label="Demo" className="text-primary hover:text-black font-semibold border-none h-10 w-auto shadow-overWhite bg-dark uppercase" icon={<FaExternalLinkAlt />} iconPosition="right" />
           </a>
           <div className="flex flex-col gap-1 h-10 justify-center">
             {project.codebasePath && (

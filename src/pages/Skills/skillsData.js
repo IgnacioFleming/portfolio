@@ -8,9 +8,10 @@ export const frontendSkills = [
   { name: "Typescript", path: icons.typescript },
   { name: "React Js", path: icons.reactJS },
   { name: "Zustand", path: icons.zustand },
+  { name: "Tanstack Query", path: icons.tanstackQuery },
   { name: "Vite", path: icons.vite },
   { name: "Material UI", path: icons.materialUI },
-  { name: "Primereact", path: icons.primereact },
+  // { name: "Primereact", path: icons.primereact },
   { name: "Tailwind CSS", path: icons.tailwind },
 ];
 
@@ -28,5 +29,6 @@ export const toolsSkills = [
   { name: "Firebase", path: icons.firebase },
   { name: "Git", path: icons.git },
   { name: "Postman", path: icons.postman },
+  { name: "Figma", path: icons.figma },
   { name: "Jira", path: icons.jira },
 ];

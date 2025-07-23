@@ -1,21 +1,25 @@
 {
   "navbar": {
-    "home": "HOME",
-    "projects": "PROJECTS",
-    "skills": "SKILLS",
-    "about-me": "ABOUT ME",
-    "contact": "CONTACT"
+    "home": "Home",
+    "projects": "Proyects",
+    "skills": "Skills",
+    "about-me": "About Me",
+    "contact": "Contact"
   },
   "content": {
     "home": {
-      "name": "IGNACIO FLEMING",
+      "name": "Ignacio Fleming",
       "position": "Full Stack Dev",
       "description": "Passionate about building innovative web solutions. With a strong background as a Product Owner, I bring a unique mix of technical expertise and business perspective. Whether it’s crafting smooth user experiences or solving complex backend problems, I focus on delivering real value through code.",
-      "download-button": "DOWNLOAD RESUME"
+      "download-button": "Download Resume"
     },
     "projects": {
-      "title": "PROJECTS",
+      "title": "Projects",
       "cards": {
+        "frontend-mentoring": {
+          "title": "Frontend Mentorship",
+          "description": "Hands-on mentorship guided by a U.S.-based Tech Lead, focused on real-world frontend development. I'm enhancing my skills in React, TypeScript, Zustand, TanStack Query, testing, and clean component architecture. The program simulates a professional team environment with weekly tasks, code reviews and agile methodology."
+        },
         "whatsapp-clone": {
           "title": "WhatsApp Web Clone",
           "description": "A real-time messaging application inspired by WhatsApp Web. Built with Typescript, Node.js, and WebSockets, it features user authentication, conversations, message history, and live communication. Designed with modular architecture and a focus on performance, it's a solid example of full stack development in action."
@@ -44,7 +48,7 @@
       }
     },
     "skills": {
-      "title": "SKILLS",
+      "title": "Skills",
       "sections": {
         "frontend": "Frontend",
         "backend": "Backend",
@@ -52,7 +56,7 @@
       }
     },
     "about-me": {
-      "title": "ABOUT ME",
+      "title": "About Me",
       "paragraphs": {
         "p1": "My journey into software development began in 2022, while working in the back-office operations of a stock brokerage firm. I started programming in VBA, automating most internal processes through custom macros.",
         "p2": "As I improved my technical skills, I moved into the Product team, leading key projects related to cash-in/out flows, account balances, and holdings. One of my proudest accomplishments was leading the launch of a cryptocurrency app from scratch.",
@@ -61,12 +65,12 @@
       }
     },
     "contact": {
-      "title": "LET'S <br/>CONNECT!",
+      "title": "Let's <br/>Connect!",
       "form": {
         "placeholders": {
-          "name": "NAME",
-          "email": "EMAIL",
-          "message": "MESSAGE"
+          "name": "Name",
+          "email": "Email",
+          "message": "Message"
         },
         "errors": {
           "name": {
@@ -81,10 +85,10 @@
             "required": "Please write your contact message here."
           }
         },
-        "send-button": "SEND"
+        "send-button": "Send"
       },
       "media": {
-        "title": "MEDIA"
+        "title": "Media"
       }
     }
   }

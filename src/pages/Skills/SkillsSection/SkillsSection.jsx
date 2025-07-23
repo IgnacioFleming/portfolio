@@ -5,7 +5,7 @@ function SkillsSection({ skills, title }) {
     <>
       <article className="flex flex-col items-center justify-center m-5 my-12 md:m-12">
         <div className="w-full flex flex-col lg:flex-row items-start lg:items-center gap-10">
-          <h2 className="my-5 lg:w-[350px]  shrink-0">{title}</h2>
+          <h2 className="my-5 lg:w-[350px] shrink-0">{title}</h2>
           <div className="flex flex-wrap gap-5 items-center my-5 md:my-0 md:h-40">
             {skills.map((skill, index) => {
               return (

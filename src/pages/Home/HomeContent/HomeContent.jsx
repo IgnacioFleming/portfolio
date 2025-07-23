@@ -15,13 +15,13 @@ function HomeContent() {
       <div className="w-full lg:w-1/2 flex justify-center">
         <div>
           <div className="my-8">
-            <h1 className="my-2">{t("content.home.name")}</h1>
+            <h1 className="my-2 uppercase">{t("content.home.name")}</h1>
             <h2>{t("content.home.position")}</h2>
           </div>
           <p className={styles.summary}>{t("content.home.description")}</p>
           <div className="flex gap-5 lg:gap-10 items-center">
             <a download href={`/docs/CV Ignacio Fleming - ${lang.toUpperCase()}.pdf`}>
-              <Button label={t("content.home.download-button")} icon={<MdOutlineFileDownload size={24} />} iconPosition="right" className="shadow-elevated text-black font-bold text-base bg-primary" />
+              <Button label={t("content.home.download-button")} icon={<MdOutlineFileDownload size={24} />} iconPosition="right" className="shadow-elevated text-black font-bold text-base bg-primary uppercase" />
             </a>
             <a href="https://github.com/IgnacioFleming" target="_blank">
               <FaGithub size={40} color="var(--primary)" className="cursor-pointer" onMouseEnter={eventChangeColor({ color: "white" })} onMouseLeave={eventChangeColor({ revert: true })} />
