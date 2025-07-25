@@ -17,7 +17,7 @@
       "title": "Projects",
       "cards": {
         "frontend-mentoring": {
-          "title": "Frontend Mentorship",
+          "title": "Frontend Mentoring",
           "description": "Hands-on mentorship guided by a U.S.-based Tech Lead, focused on real-world frontend development. I'm enhancing my skills in React, TypeScript, Zustand, TanStack Query, testing, and clean component architecture. The program simulates a professional team environment with weekly tasks, code reviews and agile methodology."
         },
         "whatsapp-clone": {
