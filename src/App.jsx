@@ -12,7 +12,6 @@ import LanguageContextProvider from "./context/Language";
 function App() {
   const showNavbar = useShowFixedNavbar();
   const hasCursor = useDeviceHasCursor();
-  console.log(hasCursor);
   return (
     <LanguageContextProvider>
       {hasCursor && <CursorBubble />}

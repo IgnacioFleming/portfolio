@@ -5,12 +5,14 @@ import { FaLinkedin } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
 import { eventChangeColor } from "../../helpers/utils";
 import { Trans, useTranslation } from "react-i18next";
+import { Container } from "../../components/Container/Container";
 
 const Contact = ({ handleChange, handleSubmit, errors, values }) => {
   const { t } = useTranslation();
   return (
     <section id="contact" className="flex justify-center py-24 bg-[url('/images/background-code.webp')] bg-dark bg-cover">
-      <div className="w-11/12">
+      <Container>
+        {/* <div className="w-11/12"> */}
         <h1 className="uppercase">
           <Trans i18nKey="content.contact.title">
             Let's <br />
@@ -47,7 +49,8 @@ const Contact = ({ handleChange, handleSubmit, errors, values }) => {
             </div>
           </div>
         </footer>
-      </div>
+        {/* </div> */}
+      </Container>
     </section>
   );
 };

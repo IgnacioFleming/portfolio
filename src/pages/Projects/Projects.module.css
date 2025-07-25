@@ -3,8 +3,4 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
-  padding-inline: 150px;
-  @media (max-width: 1800px) {
-    padding-inline: 0px;
-  }
 }

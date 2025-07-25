@@ -2,9 +2,10 @@ import Card from "../../components/Card/Card";
 import { projects } from "./projectsInfo";
 import { renderFooter } from "./renderFooter";
 import { useTranslation } from "react-i18next";
-import styles from "./Projects.module.css";
 import { useRef, useState } from "react";
 import { Button, createTheme, ThemeProvider } from "@mui/material";
+import styles from "./Projects.module.css";
+import { Container } from "../../components/Container/Container";
 
 const theme = createTheme({
   palette: {
@@ -39,8 +40,8 @@ function Projects() {
   const { t } = useTranslation();
 
   return (
-    <section id="projects" className="flex justify-center bg-dark py-24 2xl:px-24">
-      <div className="w-full lg:w-11/12">
+    <section id="projects" className="flex justify-center bg-dark py-24">
+      <Container>
         <h1 className="text-center uppercase">{t("content.projects.title")}</h1>
         <div className="relative">
           <div ref={scrollBackRef} className={`relative  w-full ${styles.projectGrid} ${showAll ? "show-all" : ""} ${isHiding ? "hide-anim" : ""} gap-y-24 my-24  select-none projects-container`} style={{ scrollbarWidth: "none" }}>
@@ -60,7 +61,7 @@ function Projects() {
             </ThemeProvider>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
